@@ -218,6 +218,7 @@
         margin-top: 0;
         transition: 0.5s;
     }
+    
 
     .navbar .navbar-nav .nav-item::after,
     .navbar .navbar-nav .nav-item::before {
@@ -645,4 +646,1238 @@
 }
 /*** copyright end ***/
 
+
+/* NAVBAR GENEL */
+.resa-navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 18px 0;
+  z-index: 999;
+}
+
+/* LOGO */
+.resa-navbar .navbar-brand {
+  font-size: 22px;
+  color: #000;
+}
+
+.resa-navbar .navbar-brand i {
+  font-size: 22px;
+}
+
+/* LINKLER */
+.resa-navbar .nav-link {
+  color: #111 !important;
+  font-weight: 500;
+  margin: 0 8px;
+  position: relative;
+  padding: 6px 12px;
+}
+
+/* HOVER ÇERÇEVE */
+.resa-navbar .nav-link::before,
+.resa-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 1px solid #bbb;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.resa-navbar .nav-link::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.resa-navbar .nav-link::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.resa-navbar .nav-link:hover::before,
+.resa-navbar .nav-link:hover::after,
+.resa-navbar .nav-link.active::before,
+.resa-navbar .nav-link.active::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+/* DROPDOWN */
+.resa-navbar .dropdown-menu {
+  border-radius: 0;
+  border: 1px solid #eee;
+  margin-top: 15px;
+}
+
+.resa-navbar .dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+/* PLUS İŞARETİ */
+.plus {
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* SAĞ ICON */
+.nav-icon {
+  font-size: 20px;
+  color: #000;
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+  .resa-navbar .nav-link {
+    margin: 8px 0;
+  }
+}
+
+/* 🔥 TÜM TURUNCULARI KAPAT */
+:root {
+  --bs-secondary: #555 !important;   /* turuncu yerine koyu gri */
+  --bs-primary: #111 !important;     /* ana renk siyah */
+}
+
+/* NAVBAR ARKA PLAN */
+.navbar {
+  background: #fff !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* NAVBAR YAZILAR */
+.navbar .nav-link {
+  color: #222 !important;
+}
+
+/* AKTİF & HOVER YAZI */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #000 !important;
+}
+
+/* HOVER ÇERÇEVELERİ (turuncu → gri) */
+.navbar .nav-link::before,
+.navbar .nav-link::after {
+  border-color: #bdbdbd !important;
+}
+
+.navbar .nav-link:hover::before,
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::before,
+.navbar .nav-link.active::after {
+  border-color: #777 !important;
+}
+
+/* DROPDOWN + PLUS */
+.navbar .dropdown-toggle,
+.navbar .dropdown-menu,
+.navbar .dropdown-item {
+  color: #222 !important;
+}
+
+.navbar .dropdown-item:hover {
+  background: #f5f5f5 !important;
+  color: #000 !important;
+}
+
+/* MAIL ICON */
+.navbar i {
+  color: #222 !important;
+}
+
+.navbar i:hover {
+  color: #000 !important;
+}
+
+/* TURUNCU ÇİZGİ / GÖLGE VARSA KAPAT */
+.navbar,
+.navbar * {
+  box-shadow: none !important;
+}
+
+/* 📱 MOBİL NAVBAR DÜZELTME */
+@media (max-width: 991px) {
+
+  /* Menü kapalıyken görünmesin */
+  .navbar-collapse {
+    background: #fff;
+    padding: 15px 0;
+  }
+
+  /* Linkleri alt alta getir */
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+
+  .navbar .nav-link {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  /* MOBİLDE ÇERÇEVEYİ KAPAT */
+  .navbar .nav-link::before,
+  .navbar .nav-link::after {
+    display: none !important;
+  }
+
+  /* DROPDOWN */
+  .navbar .dropdown-menu {
+    position: static;
+    border: none;
+    box-shadow: none;
+    margin-left: 15px;
+  }
+}
+
+/* 🔥 SLIDER ÜST YAZI – TURUNCUYU KAPAT */
+.carousel-caption p,
+.carousel-caption .text-secondary {
+  color: #e0e0e0 !important; /* açık gri */
+  letter-spacing: 2px;
+}
+
+/* Eğer span ile yazıldıysa */
+.carousel-caption span {
+  color: #e0e0e0 !important;
+}
+
+/* Daha net siyah istersek (alternatif) */
+/*
+.carousel-caption p {
+  color: #fff !important;
+}
+*/
+
+/* 🎨 SLIDER GÖRSEL CANLANDIRMA */
+.carousel-item img {
+  filter: brightness(1.08) contrast(1.1) saturate(1.2);
+}
+
+/* PROJE ŞERİDİ */
+.resa-project-strip {
+  padding: 20px 0 0;
+  background: #fff;
+}
+
+.resa-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px 40px;
+}
+
+.resa-project-header h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/* ŞERİT */
+.resa-project-images {
+  display: flex;
+  height: 520px;
+}
+
+/* ITEM */
+.resa-project-item {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s ease;
+}
+
+/* ORTA NET */
+.resa-project-item.focus {
+  filter: none;
+}
+
+/* 🔥 BLUR TAMAMEN KAPAT */
+.resa-project-item {
+  filter: none !important;
+}
+
+
+/* HOVER */
+.resa-project-item:hover {
+  filter: none;
+  flex: 1.2;
+}
+
+/* YAZI */
+.resa-project-item span {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+
+/* MOBİL */
+@media (max-width: 992px) {
+  .resa-project-images {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .resa-project-item {
+    height: 220px;
+  }
+
+  .resa-project-header {
+    padding: 0 20px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ŞERİT */
+.resa-project-images {
+  display: flex;
+  height: 420px;
+}
+
+/* ORTAK AYAR */
+.resa-project-item {
+  flex: 1;
+  position: relative;
+  background-size: 500% 100%; /* 🔥 5 PARÇA */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+/* PARSEL DAĞILIMI */
+.resa-project-item:nth-child(1) {
+  background-position: 0% center;
+}
+.resa-project-item:nth-child(2) {
+  background-position: 25% center;
+}
+.resa-project-item:nth-child(3) {
+  background-position: 50% center;
+}
+.resa-project-item:nth-child(4) {
+  background-position: 75% center;
+}
+.resa-project-item:nth-child(5) {
+  background-position: 100% center;
+}
+
+/* ALT YAZI */
+.resa-project-item span {
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+
+/* HOVER (İSTEĞE BAĞLI – MİA YAPI'DA ÇOK HAFİF) */
+.resa-project-item:hover {
+  filter: brightness(1.05);
+}
+
+/* MOBİL */
+@media (max-width: 992px) {
+  .resa-project-images {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .resa-project-item {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+
+/* YAZI */
+.resa-project-item span {
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+
+/* PARSELLER ARASI ÇİZGİ */
+.resa-project-item {
+  border-right: 1px solid rgba(255,255,255,0.35);
+}
+
+/* SON PARSELDE ÇİZGİ OLMASIN */
+.resa-project-item:last-child {
+  border-right: none;
+}
+
+/* PARSELLER ARASI ÇİZGİ */
+.resa-project-item {
+  border-right: 1px solid rgba(255,255,255,0.35);
+}
+
+/* SON PARSELDE ÇİZGİ OLMASIN */
+.resa-project-item:last-child {
+  border-right: none;
+}
+
+.resa-project-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 60px 40px;
+}
+
+/* BAŞLIK ORTA */
+.resa-project-header h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+/* BUTON SAĞDA */
+.resa-project-header a {
+  margin-left: auto;
+}
+
+
+/* BAŞLIK – LACİVERT */
+.resa-project-header h2 {
+  color: #0b1c2d; /* lacivert-siyah arası */
+}
+
+/* BUTON – LACİVERT SİYAH */
+.resa-project-header .btn-dark {
+  background-color: #0b1c2d;
+  border-color: #0b1c2d;
+  color: #fff;
+}
+
+/* HOVER */
+.resa-project-header .btn-dark:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+
+/* 📱 MOBİLDE PROJELER – GERÇEK TAM BOY ÇÖZÜM */
+@media (max-width: 768px) {
+
+  .resa-project-images {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .resa-project-item {
+    flex: none !important;
+    width: 100% !important;
+    height: 320px;
+
+    /* 🔥 PARSEL SİSTEMİNİ KAPAT */
+    background-size: cover !important;
+    background-position: center !important;
+
+    /* GEREKSİZ HER ŞEYİ EZ */
+    border: none !important;
+    filter: none !important;
+
+    display: block;
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  /* Yazı */
+  .resa-project-item span {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+
+    font-size: 18px;
+    color: #fff;
+    background: rgba(0,0,0,0.55);
+    padding: 10px 14px;
+    border-radius: 4px;
+  }
+}
+
+/* =========================
+   PROJELER – MASAÜSTÜ
+========================= */
+.resa-project-images {
+  display: flex;
+  height: 520px;
+}
+
+.resa-project-item {
+  flex: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+/* 5 PARÇA */
+.resa-project-item:nth-child(1) { background-position: 0% center; }
+.resa-project-item:nth-child(2) { background-position: 25% center; }
+.resa-project-item:nth-child(3) { background-position: 50% center; }
+.resa-project-item:nth-child(4) { background-position: 75% center; }
+.resa-project-item:nth-child(5) { background-position: 100% center; }
+
+/* =========================
+   PROJELER – MOBİL
+========================= */
+@media (max-width: 768px) {
+
+  .resa-project-images {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .resa-project-item {
+    display: block !important;
+    width: 100% !important;
+    height: 320px !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    /* 🔥 BOŞLUK YOK */
+    margin: 0 !important;
+
+    /* 🔥 İNCE ÇİZGİ */
+    border-bottom: 1px solid rgba(255,255,255,0.35) !important;
+
+    position: relative;
+  }
+
+  /* Son elemanda çizgi olmasın */
+  .resa-project-item:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Yazı */
+  .resa-project-item span {
+    position: absolute !important;
+    left: 16px !important;
+    bottom: 16px !important;
+
+    font-size: 18px !important;
+    color: #fff !important;
+    background: rgba(0,0,0,0.55) !important;
+    padding: 10px 14px !important;
+    border-radius: 4px !important;
+  }
+}
+
+.bg-breadcrumb {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* ARKA PLAN GÖRSEL + BLUR */
+.bg-breadcrumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../img/carouselblog.jpg");
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(6px) brightness(0.6);
+  transform: scale(1.1); /* blur kenarlarını gizler */
+
+  z-index: 1;
+}
+
+/* İÇERİK ÜSTE ÇIKSIN */
+.bg-breadcrumb .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   FOOTER – RENKSİZ TASARIM
+========================= */
+
+/* Footer arka planını tamamen sıfırla */
+.footer {
+  background: none !important;
+  background-color: #ffffff !important;
+}
+
+/* Footer iç yazılar */
+.footer,
+.footer p,
+.footer a,
+.footer h4 {
+  color: #222 !important;
+}
+
+/* Link hover */
+.footer a:hover {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+/* Sosyal ikonlar */
+.footer .footer-btn a {
+  background: #f1f1f1 !important;
+}
+
+.footer .footer-btn a i {
+  color: #222 !important;
+}
+
+/* =========================
+   COPYRIGHT – RENKSİZ
+========================= */
+
+.copyright {
+  background: #ffffff !important;
+  border-top: 1px solid #e5e5e5;
+}
+
+.copyright span,
+.copyright a {
+  color: #333 !important;
+}
+
+.copyright a:hover {
+  color: #000 !important;
+}
+
+/* =========================
+   FOOTER – İLETİŞİM SAYFASI FORMATINDA
+========================= */
+
+.footer {
+  background: #ffffff !important;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Başlıklar */
+.footer h4 {
+  color: #111 !important;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Yazılar */
+.footer p {
+  color: #555 !important;
+  line-height: 1.7;
+}
+
+/* Linkler */
+.footer a {
+  color: #333 !important;
+  text-decoration: none;
+  line-height: 36px;
+}
+
+.footer a:hover {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+/* Sosyal ikon */
+.footer .footer-btn a {
+  background: #f3f3f3 !important;
+  border: 1px solid #ddd;
+}
+
+.footer .footer-btn a i {
+  color: #111 !important;
+}
+
+/* =========================
+   COPYRIGHT – SADE & TEMİZ
+========================= */
+
+.copyright {
+  background: #ffffff !important;
+  border-top: 1px solid #e6e6e6;
+  padding: 20px 0;
+}
+
+.copyright span,
+.copyright a {
+  color: #555 !important;
+  font-size: 14px;
+}
+
+.copyright a:hover {
+  color: #000 !important;
+}
+
+/* =========================
+   İLETİŞİM RENK DÜZENİ
+========================= */
+
+/* Başlık – Mesajınızı Gönderiniz */
+/* İLETİŞİM BAŞLIK – ÇOK KOYU GRİ */
+.contact h2 {
+  color: #222 !important;   /* koyu gri */
+  font-weight: 700;
+}
+
+
+/* MESAJ GÖNDER BUTONU – ÇOK KOYU GRİ */
+.contact .btn-primary {
+  background-color: #2a2a2a !important;
+  border-color: #2a2a2a !important;
+  color: #fff;
+}
+
+/* Hover */
+.contact .btn-primary:hover {
+  background-color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+}
+
+
+
+/* =========================
+   İLETİŞİM FORMU BORDER RENKLERİ
+========================= */
+
+/* Input & textarea normal hali */
+.contact .form-control {
+  border: 1px solid #666 !important; /* koyu gri */
+  box-shadow: none !important;
+}
+
+/* Floating label sarmalayıcı */
+.contact .form-floating {
+  border-color: #666 !important;
+}
+
+/* Focus (tıklanınca) */
+.contact .form-control:focus {
+  border-color: #333 !important; /* daha koyu gri */
+  box-shadow: none !important;
+}
+
+/* Label rengi (aktifken turuncu olmasın) */
+.contact .form-floating label {
+  color: #444;
+}
+
+.contact .form-control:focus + label {
+  color: #222;
+}
+
+/* İLETİŞİM TELEFON NUMARALARI */
+.contact a[href^="tel"] {
+  color: #2a2a2a !important;   /* çok koyu gri */
+  font-weight: 600;
+}
+
+/* Telefon ikonları */
+.contact a[href^="tel"] i {
+  color: #2a2a2a !important;
+}
+
+/* Hover (isteğe bağlı) */
+.contact a[href^="tel"]:hover {
+  color: #1a1a1a !important;
+}
+
+
+/* =========================
+   GLOBAL SAĞ–SOL BOŞLUK SIFIRLAMA
+========================= */
+
+/* Body kaynaklı boşluklar */
+html, body {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Contact section tam genişlik */
+.contact {
+  width: 100vw;
+  background-color: #f3f3f3; /* grimsi */
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* İçerik container’ı ortalı ama kenarlara değmez */
+.contact .container,
+.contact .container-fluid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .contact .container,
+  .contact .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* ABOUT BÖLÜMÜ */
+.resa-about {
+  background: #f4f4f4;
+  min-height: 90vh;          /* 🔥 ekran boyuna büyür */
+  display: flex;
+  align-items: center;
+  padding: 120px 0;          /* yukarı–aşağı ferahlık */
+}
+
+
+.resa-about-img {
+  width: 100%;
+  height: 75vh;              /* 🔥 görsel boyuna uzar */
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.resa-about .col-lg-6:last-child {
+  padding-left: 60px;        /* yazıyı biraz içeri al */
+}
+
+
+@media (max-width: 768px) {
+
+  .resa-about {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .resa-about-img {
+    height: 320px;           /* mobilde ideal */
+  }
+
+  .resa-about .col-lg-6:last-child {
+    padding-left: 15px;
+  }
+}
+
+
+/* Üst küçük başlık */
+.resa-subtitle {
+  color: #666;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Ana başlık */
+.resa-title {
+  color: #0b1c2d; /* lacivert-siyah */
+  font-size: 42px;
+  font-weight: 600;
+}
+
+/* Metin */
+.resa-text {
+  color: #555;
+  line-height: 1.7;
+  max-width: 820px;
+}
+
+/* Sayaçlar */
+.resa-counters {
+  margin-top: 30px;
+}
+
+.resa-counter {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0b1c2d;
+}
+
+.resa-counters span {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .resa-title {
+    font-size: 32px;
+  }
+}
+
+/* PROJELER ALTI BOŞLUĞU TAMAMEN KAPAT */
+.resa-project-strip {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* PROJELER → ABOUT ARASI TÜM BOŞLUKLARI EZ */
+.resa-project-strip + section {
+  margin-top: 0 !important;
+  padding-top: 30px !important;
+}
+
+/* RESA ABOUT – ÜSTE YAKLAŞTIR */
+.resa-about {
+  margin-top: -140px;   /* 🔥 yukarı çeker */
+  padding-top: 40px;   /* iç boşluk kalsın */
+  padding-bottom: 80px;
+}
+
+.resa-project-strip {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.resa-about-img {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;   /* 🔥 boyuna büyür */
+  object-fit: cover;
+  display: block;
+}
+
+.resa-subtitle {
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #0b1c2d; /* lacivert-siyah */
+}
+
+/* 🔥 ARADAKİ GRİ ALANI KALDIR */
+.resa-about,
+.resa-about + section,
+.resa-about + .container,
+.resa-about + .container-fluid {
+  background: #ffffff !important;
+}
+
+/* ÜST–ALT FAZLA BOŞLUĞU SIFIRLA */
+.resa-about {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Sonraki section yukarı çıksın */
+.resa-about + section {
+  padding-top: 40px !important; /* gerekirse 20px yap */
+  margin-top: 0 !important;
+}
+
+body {
+  background: #ffffff !important;
+}
+
+.resa-about-content {
+  padding-left: 80px;   /* 👉 sağa kayma miktarı */
+}
+
+
+.resa-about .col-lg-6,
+.resa-about .col-lg-7,
+.resa-about-text {
+  padding-left: 100px;   /* 🔥 yazıyı sağa iter */
+}
+
+
+.resa-text {
+  max-width: 720px;   /* 🔥 satırlar uzar */
+}
+
+/* İLETİŞİM BÖLÜMÜ – ARKA PLAN TAM BEYAZ */
+.contact,
+.contact.bg-light {
+  background-color: #ffffff !important;
+}
+
+/* İç container'lar da beyaz olsun */
+.contact .container,
+.contact .container-fluid {
+  background-color: #ffffff !important;
+}
+
+/* BACK TO TOP – KOYU GRİ */
+.back-to-top {
+  background-color: #555 !important;   /* koyu gri */
+  border-color: #555 !important;
+}
+
+.back-to-top i {
+  color: #fff !important;              /* ok beyaz */
+}
+
+/* Hover */
+.back-to-top:hover {
+  background-color: #333 !important;   /* daha koyu gri */
+  border-color: #333 !important;
+}
+
+/* Hakkımızda – üstten boşluk */
+.resa-about {
+  padding: 60px 40px; /* üst-alt | sağ-sol */
+}
+
+.resa-about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px; /* çok hafif */
+}
+
+.resa-about {
+  padding: 80px 60px;
+  background-color: #fff;
+}
+
+/* BLOG – tarih ve yazar ikonları */
+.blog-item .blog-content i {
+    color: #000 !important; /* koyu gri */
+}
+
+/* BLOG – tarih ve yazar yazıları */
+.blog-item .blog-content p {
+    color: #444; /* koyu gri, çok sert değil */
+}
+
+/* BLOG – başlık linkleri */
+.blog-item .blog-content a.h4 {
+    color: #000; /* siyah */
+}
+
+.blog-item .blog-content a.h4:hover {
+    color: #333; /* hover’da hafif koyu gri */
+}
+
+/* BLOG – Devamını Oku butonu yazı rengi */
+.blog-item .btn.btn-secondary {
+    color: #fff; /* beyaz yazı */
+}
+
+/* BLOG SAYFASI – TURUNCU RENKLERİ TAMAMEN EZ */
+.blog-item .text-secondary {
+    color: #333 !important; /* koyu gri */
+}
+
+/* BLOG – ikonlar (takvim, kullanıcı) */
+.blog-item i {
+    color: #333 !important;
+}
+
+/* BLOG – başlıklar (Devamını Oku üstü) */
+.blog-item .blog-content a.h4 {
+    color: #000 !important;
+}
+
+.blog-item .blog-content a.h4:hover {
+    color: #000 !important;
+}
+
+/* BLOG – Devamını Oku butonu yazı rengi */
+.blog-item .btn.btn-secondary {
+    color: #333 !important;      /* koyu gri yazı */
+}
+
+/* Hover durumunda da turuncuya dönmesin */
+.blog-item .btn.btn-secondary:hover {
+    color: #000 !important;      /* hover’da siyah */
+}
+
+.blog-item .btn.btn-secondary {
+    background-color: #f2f2f2 !important; /* açık gri zemin */
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+}
+
+.blog-item .btn.btn-secondary:hover {
+    background-color: #e6e6e6 !important;
+    color: #000 !important;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* en kritik satır */
+}
+
+.hero-banner {
+  height: calc(100vh - 80px); /* navbar yüksekliği */
+  margin-top: 80px;
+}
+
+/* Sayfa genel boşluklarını sıfırla */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.blog-banner {
+    overflow: hidden;
+}
+
+.blog-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* BLOG BANNER – GERÇEK TAM GENİŞLİK */
+.blog-banner-full {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.blog-banner-full img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* BLOG BAŞLIK RENKLERİ – LACİVERT / SİYAH */
+.blog-item .blog-content a {
+    color: #0b1c2d !important; /* lacivert-siyah */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Hover */
+.blog-item .blog-content a:hover {
+    color: #747272 !important; /* siyaha yaklaşır */
+}
+
+/* NAVBAR LOGO */
+.navbar-logo {
+  height: 42px;        /* ideal masaüstü */
+  width: auto;
+  display: block;
+}
+
+/* Mobilde biraz küçült */
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 34px;
+  }
+}
+
+/* BLOG KART BAŞLIKLARI */
+.blog-item .blog-content a {
+    color: #111;              /* neredeyse siyah */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.blog-item .blog-content a:hover {
+    color: #555;              /* koyu gri */
+}
+
+/* BLOG YAZAR / TARİH RENKLERİ */
+.blog-item .text-secondary {
+    color: #777 !important;   /* orta gri */
+}
+
+/* BLOG DETAY – AVANTAJ KUTULARI */
+.blog .bg-light h5 i {
+    color: #666 !important;   /* koyu gri ikon */
+}
+
+/* BLOG VURGU ÇİZGİLERİ */
+.blog .border-primary {
+    border-color: #333 !important;
+}
+
+/* BUTONLAR – GRİ TEMA */
+.btn-secondary {
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+/* BLOG SAYFASI ARKA PLAN */
+.blog {
+    background-color: #fafafa; /* çok açık gri */
+}
+
+/* ===============================
+   BLOG & İÇERİK RENK OVERRIDE
+   =============================== */
+
+/* Bootstrap primary (lacivert) → koyu gri */
+.text-primary,
+a.text-primary {
+    color: #2b2b2b !important;
+}
+
+/* Bootstrap secondary (turuncu) → orta gri */
+.text-secondary,
+a.text-secondary {
+    color: #6c6c6c !important;
+}
+
+/* Blog başlık linkleri */
+.blog-content a,
+.blog-content a:hover {
+    color: #1f1f1f !important;
+}
+
+/* Tarih – yazar alanları */
+.blog-content p,
+.blog-content span {
+    color: #6a6a6a !important;
+}
+
+/* İçerik içi ikonlar */
+.blog-content i {
+    color: #4f4f4f !important;
+}
+
+/* Blog detay sayfası başlıkları */
+.blog h1,
+.blog h3,
+.blog h5 {
+    color: #1c1c1c !important;
+}
+
+.btn-secondary {
+    background-color: #2b2b2b !important;
+    border-color: #2b2b2b !important;
+}
+
+.btn-secondary:hover {
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
 

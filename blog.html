@@ -29,192 +29,273 @@
                 <span class="sr-only">Yükleniyor...</span>
             </div>
         </div>
-        <div class="container-fluid topbar d-none d-xl-block w-100">
-            <div class="row gx-0 align-items-center" style="height: 45px;">
-                <div class="col-lg-6 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <a href="tel:+905324404356" class="text-muted me-4"><i class="fas fa-phone-alt text-secondary me-2"></i>0 (532) 440 43 56</a>
-                        <a href="tel:+905326056217" class="text-muted me-4"><i class="fas fa-mobile-alt text-secondary me-2"></i>0 (532) 605 62 17</a>
-                        <a href="mailto:resayapi@outlook.com" class="text-muted me-0"><i class="fas fa-envelope text-secondary me-2"></i>resayapi@outlook.com</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center text-lg-end">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-primary btn-square border border-white me-3"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="container-fluid sticky-top px-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-4">
-                <a href="index.html" class="navbar-brand p-0">
-                    <h1 class="text-secondary display-6"><i class="fas fa-city text-primary me-3"></i>RESA YAPI</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto pt-2 pt-lg-0">
-                        <a href="index.html" class="nav-item nav-link">Anasayfa</a>
-                        <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
-                        <a href="service.html" class="nav-item nav-link">Hizmetler</a>
-                        
-                        <div class="nav-item dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Kurumsal</a>
-                            <div class="dropdown-menu m-lg-0">
-                                <a href="blog.html" class="dropdown-item active">Blog & Haberler</a>
-                                <a href="feature.html" class="dropdown-item">Neden Biz?</a>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="nav-item nav-link">İletişim</a>
+            <nav class="navbar navbar-expand-lg resa-navbar fixed-top">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="fas fa-building me-2"></i>
+                    <strong>RESA YAPI</strong>
+                    </a>
+
+                    <!-- MOBILE BUTTON -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#resaNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="resaNavbar">
+                    <ul class="navbar-nav ms-auto align-items-center">
+
+                        <li class="nav-item">
+                        <a class="nav-link " href="index.html">Anasayfa</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">Kurumsal</a>
+                        </li>
+
+                        <!-- DROPDOWN -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Projelerimiz <span class="plus">+</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                <a class="dropdown-item" href="gelecekprojeler.html">
+                                    Gelecek Projeler
+                                </a>
+                                </li>
+                                <li>
+                                <a class="dropdown-item" href="devamedenprojeler.html">
+                                    Devam Eden Projeler
+                                </a>
+                                </li>
+                                <li>
+                                <a class="dropdown-item" href="tamamlanmisprojeler.html">
+                                    Tamamlanmış Projeler
+                                </a>
+                                </li>
+                            </ul>
+                            </li>
+
+                        <!-- DROPDOWN -->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Blog <span class="plus">+</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog & Haberler</a></li>
+                        </ul>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                        </li>
+
+                        <!-- ICON -->
+                        <li class="nav-item ms-3">
+                        <a class="nav-icon" href="contact.html">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        </li>
+
+                    </ul>
                     </div>
                 </div>
-            </nav>
+                </nav>
+
         </div>
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Haberler & Blog</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
-                    <li class="breadcrumb-item"><a href="#">Kurumsal</a></li>
-                    <li class="breadcrumb-item active text-secondary">Blog</li>
-                </ol>    
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Haberler & Blog</h4> 
             </div>
         </div>
         <div class="container-fluid blog py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <p class="text-uppercase text-secondary fs-5 mb-0">BLOG</p>
-                    <h2 class="display-4 text-capitalize mb-3">Sektörden Güncel Bilgiler ve İpuçları</h2>
+    <div class="row g-4 px-4">
+
+        <!-- 1 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="blog-item h-100">
+                <div class="blog-img">
+                    <img src="img/blog-1.jpg" class="img-fluid w-100" alt="Akıllı Evler">
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item h-100">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="Akıllı Evler">
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <p class="mb-0"><i class="fa fa-calendar-check text-secondary me-1"></i> 10 Aralık 2025</p>
-                                    <p class="mb-0"><i class="fa fa-user text-secondary me-1"></i> Resa Ekibi</p>
-                                </div>
-                                <a href="BlogResa.html" class="h4 d-block mb-4">Geleceğin Yapıları: Akıllı Ev Teknolojileri ve Avantajları Nelerdir?</a>
-                                <a class="btn btn-secondary py-2 px-4" href="BlogResa.html">Devamını Oku</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="blog-item h-100">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="Ev Tadilatı">
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <p class="mb-0"><i class="fa fa-calendar-check text-secondary me-1"></i> 5 Aralık 2025</p>
-                                    <p class="mb-0"><i class="fa fa-user text-secondary me-1"></i> Mimar Erdem Bey</p>
-                                </div>
-                                <a href="BlogMimar.html" class="h4 d-block mb-4">Ev Tadilatında Mutlaka Dikkat Edilmesi Gereken Püf Noktalar Nelerdir?</a>
-                                <a class="btn btn-secondary py-2 px-4" href="BlogMimar.html">Devamını Oku</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="blog-item h-100">
-                            <div class="blog-img">
-                                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="Deprem Yönetmeliği">
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <p class="mb-0"><i class="fa fa-calendar-check text-secondary me-1"></i> 28 Kasım 2025</p>
-                                    <p class="mb-0"><i class="fa fa-user text-secondary me-1"></i> İnşaat Mühendis Ahmet Bey</p>
-                                </div>
-                                <a href="BlogMuhendis.html" class="h4 d-block mb-4">Depreme Dayanıklı Yapıların Temel Özellikleri Nelerdir?</a>
-                                <a class="btn btn-secondary py-2 px-4" href="BlogMuhendis.html">Devamını Oku</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item h-100">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="Akıllı Evler">
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <p class="mb-0"><i class="fa fa-calendar-check text-secondary me-1"></i> 10 Aralık 2025</p>
-                                    <p class="mb-0"><i class="fa fa-user text-secondary me-1"></i> Bilgisayar Mühendisi Büşra Hanım</p>
-                                </div>
-                                <a href="BlogBilgisayarMuhendisi.html" class="h4 d-block mb-4">İnşaat Sektöründe Teknolojinin & Yapay Zekanın Yeri ve Etkisi</a>
-                                <a class="btn btn-secondary py-2 px-4" href="BlogBilgisayarMuhendisi.html">Devamını Oku</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div class="blog-content p-4">
+                    <p class="mb-2">
+                        <i class="fa fa-user text-secondary me-1"></i> Resa Ekibi
+                    </p>
+                    <a href="BlogResa.html" class="h5 d-block mb-3">
+                        Geleceğin Yapıları: Akıllı Ev Teknolojileri
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Mesaj Bırakınız</h4>
-                            <p class="mb-3">
-                                Projelerimiz hakkında detaylı bilgi almak veya soru sormak için bize hızlıca ulaşabilirsiniz.
-                            </p>
-                            <a href ="contact.html" class="btn btn-secondary py-2 px-4">İletişim</a>
-                        </div>
-                    </div>
+
+        <!-- 2 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="blog-item h-100">
+                <div class="blog-img">
+                    <img src="img/blog-2.jpg" class="img-fluid w-100" alt="Mimarlık">
                 </div>
-                
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Hızlı Menü</h4>
-                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Anasayfa</a>
-                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Hizmetler</a>
-                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> Hakkımızda</a>
-                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> İletişim</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Son Projelerimiz</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Referanslar</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Ekibimiz</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Hizmetlerimiz</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Anahtar Teslim İnşaat</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tadilat ve Dekorasyon</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Proje Yönetimi</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> 3D Mimari Tasarım</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Konut ve Villa Yapımı</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Kentsel Dönüşüm</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Taahhüt İşleri</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">İletişim</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> İzmir/Menderes</a>
-                            <a href="mailto:resayapi@outlook.com"><i class="fas fa-envelope me-2"></i> resayapi@outlook.com</a>
-                            <a href="tel:+905324404356"><i class="fas fa-mobile-alt me-2"></i> 0 (532) 440 43 56</a>
-                            <a href="tel:+905326056217" class="mb-3"><i class="fas fa-mobile-alt me-2"></i> 0 (532) 605 62 17</a>
-                            
-                            <div class="footer-btn d-flex align-items-center">
-                                <a class="btn btn-secondary btn-md-square me-2" href=""><i class="fab fa-instagram text-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="blog-content p-4">
+                    <p class="mb-2">
+                        <i class="fa fa-user text-secondary me-1"></i> Mimar Erdem Bey
+                    </p>
+                    <a href="BlogMimar.html" class="h5 d-block mb-3">
+                        Ev Tadilatında Dikkat Edilmesi Gerekenler
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- 3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="blog-item h-100">
+                <div class="blog-img">
+                    <img src="img/blog-3.jpg" class="img-fluid w-100" alt="İnşaat Mühendisliği">
+                </div>
+                <div class="blog-content p-4">
+                    <p class="mb-2">
+                        <i class="fa fa-user text-secondary me-1"></i> İnşaat Müh. Ahmet Bey
+                    </p>
+                    <a href="BlogMuhendis.html" class="h5 d-block mb-3">
+                        Depreme Dayanıklı Yapıların Özellikleri
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 (Bilgisayar Mühendisi – EKLENDİ ✅) -->
+        <div class="col-lg-3 col-md-6">
+            <div class="blog-item h-100">
+                <div class="blog-img">
+                    <img src="img/blog-4.jpg" class="img-fluid w-100" alt="Bilgisayar Mühendisliği">
+                </div>
+                <div class="blog-content p-4">
+                    <p class="mb-2">
+                        <i class="fa fa-user text-secondary me-1"></i> Bilgisayar Müh. Büşra Hanım
+                    </p>
+                    <a href="BlogBilgisayarMuhendisi.html" class="h5 d-block mb-3">
+                        İnşaatta Yapay Zeka ve Dijitalleşme
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        
+
+   <div class="container-fluid p-0">
+                        <img 
+                            src="img/blogbanner.png" 
+                            class="img-fluid w-100"
+                            alt="Resa Yapı Projeleri"
+                        >
+    </div>
+
+
+
+     
+    <div class="container-fluid contact bg-light py-5 px-0">
+        <div class="container-fluid py-5">
+            <div class="row g-5 align-items-start">
+
+            <!-- 🔵 SOL TARAF: YAZILAR -->
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+
+                <h2 class="display-4 text-capitalize mb-3">
+                Mesajınızı Gönderiniz
+                </h2>
+
+                <p class="mb-4 fs-5">
+                Projeleriniz, sorularınız veya fiyat teklifi almak için
+                yandaki formu doldurarak bize ulaşabilirsiniz.
+                En kısa sürede size dönüş yapacağız.
+                </p>
+
+                <p class="fs-4 fw-bold">
+                <a href="tel:+905326056217" class="text-dark text-decoration-none">
+                    <i class="fas fa-phone-alt me-2"></i> 0532 605 62 17
+                </a>
+                </p>
+
+                <p class="fs-4 fw-bold">
+                <a href="tel:+905324404356" class="text-dark text-decoration-none">
+                    <i class="fas fa-phone-alt me-2"></i> 0532 440 43 56
+                </a>
+                </p>
+
+            </div>
+
+            <!-- 🟢 SAĞ TARAF: FORM -->
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                <form action="/mesajlari-oku" method="POST" onsubmit="this.submit(); this.reset(); return false;">
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                    <div class="form-floating border border-secondary">
+                        <input type="text" class="form-control" name="ad_soyad" id="name" placeholder="Adınız Soyadınız">
+                        <label for="name">Adınız Soyadınız</label>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6">
+                    <div class="form-floating border border-secondary">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email Adresiniz">
+                        <label for="email">Email Adresiniz</label>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6">
+                    <div class="form-floating border border-secondary">
+                        <input type="tel" class="form-control" name="telefon" id="phone" placeholder="Telefon Numaranız">
+                        <label for="phone">Telefon Numaranız</label>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6">
+                    <div class="form-floating border border-secondary">
+                        <input type="text" class="form-control" name="konu" id="subject" placeholder="Konu">
+                        <label for="subject">Konu</label>
+                    </div>
+                    </div>
+
+                    <div class="col-12">
+                    <div class="form-floating border border-secondary">
+                        <textarea class="form-control" name="mesaj" id="message" style="height: 160px"></textarea>
+                        <label for="message">Mesajınız</label>
+                    </div>
+                    </div>
+
+                    <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100 py-3">
+                        Mesaj Gönder
+                    </button>
+                    </div>
+
+                    </div>
+                  </form>
+               </div>
+              </div>   
+           </div>
+        </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+            </div>
+        </div>
+        </div>
+
+        
         <div class="container-fluid copyright py-4">
             <div class="container">
                 <div class="row g-4 align-items-center">
@@ -238,12 +319,16 @@
     
 
     <script src="js/main.js"></script>
-        <a href="https://wa.me/905326056217?text=Merhaba,%20web%20sitenizi%20inceledim.%20Hizmetleriniz%20ve%20fiyatlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20almak%20istiyorum." 
+
+    <a href="https://wa.me/905326056217?text=Merhaba,%20web%20sitenizi%20inceledim.%20Hizmetleriniz%20ve%20fiyatlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20almak%20istiyorum." 
     target="_blank" 
     class="position-fixed bottom-0 start-0 m-4 d-flex align-items-center justify-content-center rounded-circle" 
     style="z-index: 9999; width: 60px; height: 60px; background-color: #25D366; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); text-decoration: none;">
         <i class="fab fa-whatsapp text-white fa-3x"></i>
     </a>
+   
+      
+  
 
     </body>
 
