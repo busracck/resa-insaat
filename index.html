@@ -9,11 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: radial-gradient(circle at top, #1a2a33, #0b0f12);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,36 +22,73 @@ body {
     text-align: center;
 }
 
+/* Hafif arka glow efekti */
+body::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 140, 255, 0.15);
+    filter: blur(150px);
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Kart */
 .container {
+    position: relative;
     max-width: 600px;
-    padding: 20px;
-    animation: fadeIn 1.5s ease;
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    animation: fadeIn 1.2s ease;
 }
 
+/* Logo */
 .logo-img {
-    width: 180px;
+    width: 200px;
     margin-bottom: 25px;
-    filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
+    transition: 0.4s;
 }
 
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Başlık */
 h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
+/* Açıklama */
 p {
-    font-size: 18px;
+    font-size: 17px;
     opacity: 0.8;
 }
 
+/* Loader */
 .loader {
-    margin: 30px auto;
-    width: 60px;
-    height: 60px;
-    border: 6px solid rgba(255,255,255,0.2);
-    border-top: 6px solid #ffffff;
+    margin: 35px auto;
+    width: 65px;
+    height: 65px;
+    border: 6px solid rgba(255,255,255,0.1);
+    border-top: 6px solid #00c6ff;
     border-radius: 50%;
     animation: spin 1s linear infinite;
+}
+
+/* Alt yazı */
+.footer {
+    margin-top: 20px;
+    font-size: 13px;
+    opacity: 0.5;
 }
 
 /* Animasyonlar */
@@ -62,7 +100,7 @@ p {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(25px);
     }
     to {
         opacity: 1;
@@ -77,15 +115,17 @@ p {
 
 <div class="container">
 
-    <!-- LOGO BURASI -->
-    <img src="img/logo.png" alt="Resa İnşaat Logo" class="logo-img">
-
+    <img src="img/logo.png" alt="Resa İnşaat" class="logo-img">
     <p>
         Web sitemiz şu anda hazırlanıyor.<br>
-        Çok yakında sizlerle!
+        Çok yakında sizlerle buluşacağız.
     </p>
 
     <div class="loader"></div>
+
+    <div class="footer">
+        © 2026 Resa İnşaat
+    </div>
 
 </div>
 
