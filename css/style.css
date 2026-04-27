@@ -1881,3 +1881,30 @@ a.text-secondary {
     border-color: #000 !important;
 }
 
+.logo-img {
+    width: 220px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.loader {
+    border-top: 6px solid #00c6ff;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 200, 255, 0.15);
+    filter: blur(120px);
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
