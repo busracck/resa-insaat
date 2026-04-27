@@ -1,452 +1,79 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-    <head>
-        <meta charset="utf-8">
-        <title>Resa İnşaat - Yaşamınıza Mutluluk Katar</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Yükleniyor...</span>
-            </div>
-        </div>
-        <div class="container-fluid sticky-top px-0">
-            <nav class="navbar navbar-expand-lg resa-navbar fixed-top">
-                <div class="container">
-
-                    <!-- LOGO -->
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <i class="fas fa-building me-2"></i>
-                    <strong>RESA YAPI</strong>
-                    </a>
-
-                    <!-- MOBILE BUTTON -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#resaNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- MENU -->
-                    <div class="collapse navbar-collapse" id="resaNavbar">
-                    <ul class="navbar-nav ms-auto align-items-center">
-
-                        <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Anasayfa</a>
-                        </li>
-
-                        <li class="nav-item">
-                        <a class="nav-link" href="about.html">Kurumsal</a>
-                        </li>
-
-                          <!-- DROPDOWN -->
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                Projelerimiz <span class="plus">+</span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li>
-                                <a class="dropdown-item" href="gelecekprojeler.html">
-                                    Gelecek Projeler
-                                </a>
-                                </li>
-                                <li>
-                                <a class="dropdown-item" href="devamedenprojeler.html">
-                                    Devam Eden Projeler
-                                </a>
-                                </li>
-                                <li>
-                                <a class="dropdown-item" href="tamamlanmisprojeler.html">
-                                    Tamamlanmış Projeler
-                                </a>
-                                </li>
-                            </ul>
-                            </li>
-
-                        <!-- DROPDOWN -->
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Blog <span class="plus">+</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="blog.html">Blog & Haberler</a></li>
-                        </ul>
-                        </li>
-
-                        <li class="nav-item">
-                        <a class="nav-link" href="contact.html">İletişim</a>
-                        </li>
-
-                        <!-- ICON -->
-                        <li class="nav-item ms-3">
-                        <a class="nav-icon" href="contact.html">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                        </li>
-
-                    </ul>
-                    </div>
-                </div>
-            
-
-        </div>
-        <div class="container-fluid overflow-hidden px-0">
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="img/carousel-1.jpg?v=1" class="img-fluid w-100" alt="First slide"/>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Second slide"/>
-                        <div class="carousel-caption">
-                            <p class="text-uppercase text-secondary fs-4 mb-0 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;">RESA İNŞAAT</p>
-                            <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">Yaşamınıza Mutluluk Katar</h1>
-                            <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s;">Sektördeki deneyimimizle, her tuğlada kalite ve her projede güven sunuyoruz. Resa İnşaat, modern yaşamın gerekliliklerine uygun, sürdürülebilir ve sağlam yapılarla yanınızda.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel-3.jpg" class="img-fluid w-100" alt="Third slide"/>
-                        <div class="carousel-caption">
-                            <p class="text-uppercase text-secondary fs-4 mb-0 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1s" style="animation-delay: 1s;">RESA İNŞAAT</p>
-                            <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">Hayallerinizdeki Yaşamı Tasarlıyoruz.</h1>
-                            <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s;">Beklentilerinizin ötesine geçerek, konforu ve estetiği merkeze alıyoruz. Resa İnşaat, yenilikçi bakış açısıyla tasarladığı projelerde, size sadece bir ev değil, keyifle süreceğiniz yeni bir yaşam vadediyor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon btn-lg-square fadeInLeft animate__animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fas fa-chevron-left fa-2x"></i></span>
-                    <span class="visually-hidden">Önceki</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon btn-lg-square fadeInRight animate__animated" aria-hidden="true" data-animation="fadeInRight" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fas fa-chevron-right fa-2x"></i></span>
-                    <span class="visually-hidden">Sonraki</span>
-                </button>
-            </div>
-        </div>
-        
-
-                <!-- PROJELER -->
-            <section class="resa-project-strip">
-            <div class="container-fluid px-0">
-
-                <!-- BAŞLIK -->
-                <div class="resa-project-header">
-                
-                <h2>Projeler</h2>
-                <a href="projeler.html" class="btn btn-dark">Tüm Projelerimiz</a>
-                </div>
-
-               <div class="resa-project-images" id="resaProjectStrip">
-
-               <div class="resa-project-item" data-slide="1"
-                    style="background-image:url('../img/carousel-1.jpg?v=1')">
-                <span>RESA PORT</span>
-                </div>
-
-                <div class="resa-project-item" data-slide="2"
-                    style="background-image:url('../img/carousel-2.jpg')">
-                <span>RESA PARK</span>
-                </div>
-
-                <div class="resa-project-item" data-slide="3"
-                    style="background-image:url('../img/carousel-3.jpg')">
-                <span>RESA SARNIÇ</span>
-                </div>
-
-                <div class="resa-project-item" data-slide="2"
-                    style="background-image:url('../img/carousel-2.jpg')">
-                <span>RESA MARE</span>
-                </div>  
-
-                <div class="resa-project-item" data-slide="1"
-                    style="background-image:url('../img/carousel-1.jpg')">
-                <span>RESA MARE</span>
-                </div>
-
-                </div>
-
-                </div>
-            </div>
-
-            </section>
-
-        
-            <section class="resa-about">
-                <div class="container-fluid px-0">
-                    <div class="row g-0 align-items-center">
-
-                   <!-- SOL: GÖRSEL (SOLA YAPIŞIK) -->
-                    <div class="col-lg-6 p-0">
-                    <img src="img/about-resa.jpg" alt="Resa Yapı"
-                        class="resa-about-img">
-                    </div>
-
-                    <!-- SAĞ: YAZI -->
-                    <div class="col-lg-6">
-
-                        <h6 class="text-uppercase resa-subtitle">RESA YAPI • 2015</h6>
-
-                        <h2 class="resa-title mb-2">
-                        Geleceği İnşa Ediyoruz,Yaşamı Şekillendiriyoruz.
-                        </h2>
-
-                        <p class="resa-text mb-3">
-                        <strong>RESA YAPI</strong>, 2015 yılında İzmir Menderes’te kurulmuştur. Kurulduğu günden bu yana inşaat ve gayrimenkul sektöründe güvenilir, modern ve estetik projeler üretmeyi ilke edinmiştir. Her yapıyı yalnızca bir bina değil, uzun ömürlü ve yaşanabilir bir yaşam alanı olarak ele almaktadır.
-
-                        Bugüne kadar Menderes, Gaziemir, Çeşme, Görece ve Özdere başta olmak üzere İzmir’in birçok bölgesinde konut ve ticari projelere imza atan Resa Yapı, devam eden projeleriyle istikrarlı büyümesini sürdürmektedir.
-                        </p>
-
-                        <!-- SAYAÇLAR -->
-                        <div class="row text-center resa-counters">
-
-                        <div class="col-4">
-                            <div class="resa-counter" data-target="30">0</div>
-                            <span>Proje</span>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="resa-counter" data-target="200">0</div>
-                            <span>Konut</span>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="resa-counter" data-target="25">0</div>
-                            <span>Ticari Alan</span>
-                        </div>
-
-                        </div>
-
-                    </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-        <div class="container-fluid p-0">
-        <img 
-            src="img/combined_slash_blue_overlay.png" 
-            class="img-fluid w-100"
-            alt="Resa Yapı Projeleri"
-        >
-        </div>
-
-
-                    
-
-        <div class="container-fluid footer-simple">
-      <div class="container">
-    <div class="row align-items-start">
-
-     
-    <div class="container-fluid contact bg-light py-5 px-0">
-        <div class="container-fluid py-5">
-            <div class="row g-5 align-items-start">
-
-            <!-- 🔵 SOL TARAF: YAZILAR -->
-            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-
-                <h2 class="display-4 text-capitalize mb-3">
-                Mesajınızı Gönderiniz
-                </h2>
-
-                <p class="mb-4 fs-5">
-                Projeleriniz, sorularınız veya fiyat teklifi almak için
-                yandaki formu doldurarak bize ulaşabilirsiniz.
-                En kısa sürede size dönüş yapacağız.
-                </p>
-
-                <p class="fs-4 fw-bold">
-                <a href="tel:+905326056217" class="text-dark text-decoration-none">
-                    <i class="fas fa-phone-alt me-2"></i> 0532 605 62 17
-                </a>
-                </p>
-
-                <p class="fs-4 fw-bold">
-                <a href="tel:+905324404356" class="text-dark text-decoration-none">
-                    <i class="fas fa-phone-alt me-2"></i> 0532 440 43 56
-                </a>
-                </p>
-
-            </div>
-
-            <!-- 🟢 SAĞ TARAF: FORM -->
-            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
-                <form action="/mesajlari-oku" method="POST" onsubmit="this.submit(); this.reset(); return false;">
-                <div class="row g-3">
-
-                    <div class="col-md-6">
-                    <div class="form-floating border border-secondary">
-                        <input type="text" class="form-control" name="ad_soyad" id="name" placeholder="Adınız Soyadınız">
-                        <label for="name">Adınız Soyadınız</label>
-                    </div>
-                    </div>
-
-                    <div class="col-md-6">
-                    <div class="form-floating border border-secondary">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Email Adresiniz">
-                        <label for="email">Email Adresiniz</label>
-                    </div>
-                    </div>
-
-                    <div class="col-md-6">
-                    <div class="form-floating border border-secondary">
-                        <input type="tel" class="form-control" name="telefon" id="phone" placeholder="Telefon Numaranız">
-                        <label for="phone">Telefon Numaranız</label>
-                    </div>
-                    </div>
-
-                    <div class="col-md-6">
-                    <div class="form-floating border border-secondary">
-                        <input type="text" class="form-control" name="konu" id="subject" placeholder="Konu">
-                        <label for="subject">Konu</label>
-                    </div>
-                    </div>
-
-                    <div class="col-12">
-                    <div class="form-floating border border-secondary">
-                        <textarea class="form-control" name="mesaj" id="message" style="height: 160px"></textarea>
-                        <label for="message">Mesajınız</label>
-                    </div>
-                    </div>
-
-                    <div class="col-12">
-                    <button type="submit" class="btn btn-primary w-100 py-3">
-                        Mesaj Gönder
-                    </button>
-                    </div>
-
-                    </div>
-                  </form>
-               </div>
-              </div>   
-           </div>
-        </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-            </div>
-        </div>
-        </div>
-
-        
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                         <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Resa İnşaat</a>, Tüm Hakları Saklıdır © 2025.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-body">
-                        Designed By <a class="border-bottom text-white" href="#">BÜŞRA ÇİÇEK</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    
-
-    <script src="js/main.js"></script>
-
-    <a href="https://wa.me/905326056217?text=Merhaba,%20web%20sitenizi%20inceledim.%20Hizmetleriniz%20ve%20fiyatlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20almak%20istiyorum." 
-    target="_blank" 
-    class="position-fixed bottom-0 start-0 m-4 d-flex align-items-center justify-content-center rounded-circle" 
-    style="z-index: 9999; width: 60px; height: 60px; background-color: #25D366; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); text-decoration: none;">
-        <i class="fab fa-whatsapp text-white fa-3x"></i>
-    </a>
-   
-      
-  
-<script>
-  const items = document.querySelectorAll(".resa-project-item");
-
-  function isDesktop() {
-    return window.innerWidth > 768;
-  }
-
-  function applyDesktopSlide(slide) {
-    if (!isDesktop()) return;
-
-    items.forEach(item => {
-      item.style.backgroundImage = `url('../img/carousel-${slide}.jpg')`;
-    });
-  }
-
-  // İlk açılış
-  applyDesktopSlide(1);
-
-  // SADECE MASAÜSTÜNDE çalışır
-  items.forEach(item => {
-    item.addEventListener("mouseenter", () => {
-      if (!isDesktop()) return;
-      const slide = item.dataset.slide;
-      applyDesktopSlide(slide);
-    });
-  });
-</script>
-
-
-<script>
-  const counters = document.querySelectorAll('.resa-counter');
-
-  const speed = 200; // küçült → daha hızlı
-
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-
-      const increment = Math.ceil(target / speed);
-
-      if (count < target) {
-        counter.innerText = count + increment;
-        setTimeout(updateCount, 20);
-      } else {
-        counter.innerText = target + "+";
-      }
-    };
-
-    updateCount();
-  });
-</script>
-
-
-
-    </body>
-
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resa İnşaat - Yakında</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.loader {
+    margin: 30px auto;
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255,255,255,0.2);
+    border-top: 6px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.logo {
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">🏗️ RESA İNŞAAT</div>
+
+    <h1>🚧 Yapım Aşamasındayız</h1>
+
+    <p>Web sitemiz şu anda hazırlanıyor.<br>
+    Çok yakında sizlerle!</p>
+
+    <div class="loader"></div>
+
+</div>
+
+</body>
 </html>
