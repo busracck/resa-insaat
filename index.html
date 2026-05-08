@@ -165,19 +165,22 @@
 
                <div class="resa-project-images" id="resaProjectStrip">
 
-               <div class="resa-project-item" data-slide="1"
+               <div class="resa-project-item"
+                    data-bg="img/Menderes.jpg"
                     style="background-image:url('img/Menderes.jpg')">
-                <span>RESA MENDERES</span>
+                    <span>RESA MENDERES</span>
                 </div>
 
-                <div class="resa-project-item" data-slide="2"
+                <div class="resa-project-item"
+                    data-bg="img/Gorece.jpg"
                     style="background-image:url('img/Gorece.jpg')">
-                <span>RESA GÖRECE</span>
+                    <span>RESA GÖRECE</span>
                 </div>
 
-                <div class="resa-project-item" data-slide="3"
-                    style="background-image:url('../img/carousel-3.jpg')">
-                <span>RESA GAZİEMİR</span>
+                <div class="resa-project-item"
+                    data-bg="img/carousel-3.jpg"
+                    style="background-image:url('img/carousel-3.jpg')">
+                    <span>RESA GAZİEMİR</span>
                 </div>
 
                 <div class="resa-project-item" data-slide="2"
@@ -408,9 +411,9 @@ items.forEach(item => {
 
     item.addEventListener("mouseenter", () => {
 
-        const bg = item.style.backgroundImage;
+        const bg = item.getAttribute("data-bg");
 
-        strip.style.backgroundImage = bg;
+        strip.style.backgroundImage = `url('${bg}')`;
 
         strip.style.backgroundSize = "cover";
         strip.style.backgroundPosition = "center";
