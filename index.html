@@ -438,28 +438,7 @@
    
       
   
-<script>
 
-const strip = document.getElementById("resaProjectStrip");
-const items = document.querySelectorAll(".resa-project-item");
-
-items.forEach(item => {
-
-    item.addEventListener("mouseenter", () => {
-
-        const bg = item.getAttribute("data-bg");
-
-        strip.style.backgroundImage = `url('${bg}')`;
-
-        strip.style.backgroundSize = "cover";
-        strip.style.backgroundPosition = "center";
-        strip.style.transition = "0.5s ease";
-
-    });
-
-});
-
-</script>
 
 
 <script>
@@ -486,21 +465,39 @@ items.forEach(item => {
   });
 </script>
 
+
 <script>
 
 document.addEventListener("DOMContentLoaded", () => {
 
     const items = document.querySelectorAll(".resa-project-item");
 
+    function setPanorama(img){
+
+        items.forEach((item, index) => {
+
+            item.style.backgroundImage = `url('${img}')`;
+
+            item.style.backgroundRepeat = "no-repeat";
+
+            item.style.backgroundSize = "600% 100%";
+
+            item.style.backgroundPosition =
+                `${index * 20}% center`;
+
+        });
+
+    }
+
+    // İlk açılış
+    setPanorama("img/Menderes.jpg");
+
+    // Hover değişimi
     items.forEach(item => {
 
         item.addEventListener("mouseenter", () => {
 
-            const bg = item.getAttribute("data-bg");
-
-            items.forEach(el => {
-                el.style.backgroundImage = `url('${bg}')`;
-            });
+            setPanorama(item.dataset.bg);
 
         });
 
@@ -509,6 +506,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 </script>
+
 
     </body>
 

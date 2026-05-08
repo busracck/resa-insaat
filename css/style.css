@@ -2083,3 +2083,14 @@ body::before {
 .resa-project-item:nth-child(6){
     background-position:100% 0%;
 }
+
+
+.resa-project-images{
+    display:flex;
+    height:520px;
+    overflow:hidden;
+}
+
+.resa-project-item{
+    flex:1;
+}
