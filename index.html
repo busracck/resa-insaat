@@ -168,40 +168,28 @@
                 <!-- PROJE ALANI -->
                 <div class="resa-project-images">
 
-                    <div class="resa-project-item"
-                    data-bg="img/Menderes.jpg"
-                    style="background-image:url('img/Menderes.jpg')">
-                    <span>RESA MENDERES</span>
+                    <div class="resa-project-item" data-bg="img/Menderes.jpg">
+                        <span>RESA MENDERES</span>
                     </div>
 
-                    <div class="resa-project-item"
-                    data-bg="img/Gorece.jpg"
-                    style="background-image:url('img/Menderes.jpg')">
-                    <span>RESA GÖRECE</span>
+                    <div class="resa-project-item" data-bg="img/Gorece.jpg">
+                        <span>RESA GÖRECE</span>
                     </div>
 
-                    <div class="resa-project-item"
-                    data-bg="img/carousel-3.jpg"
-                    style="background-image:url('img/Menderes.jpg')">
-                    <span>RESA GAZİEMİR</span>
+                    <div class="resa-project-item" data-bg="img/carousel-3.jpg">
+                        <span>RESA GAZİEMİR</span>
                     </div>
 
-                    <div class="resa-project-item"
-                    data-bg="img/carousel-2.jpg"
-                    style="background-image:url('img/Menderes.jpg')">
-                    <span>RESA ÖZDERE</span>
+                    <div class="resa-project-item" data-bg="img/carousel-2.jpg">
+                        <span>RESA ÖZDERE</span>
                     </div>
 
-                    <div class="resa-project-item"
-                    data-bg="img/carouselblog.jpg"
-                    style="background-image:url('img/Menderes.jpg')">
-                    <span>RESA ÇEŞME</span>
+                    <div class="resa-project-item" data-bg="img/carouselblog.jpg">
+                        <span>RESA ÇEŞME</span>
                     </div>
 
-                    <div class="resa-project-item"
-                    data-bg="img/carousel-1.jpg"
-                    style="background-image:url('img/Menderes.jpg')">
-                    <span>RESA URLA</span>
+                    <div class="resa-project-item" data-bg="img/carousel-1.jpg">
+                        <span>RESA URLA</span>
                     </div>
 
                 </div>
@@ -219,26 +207,39 @@
 
                         const items = document.querySelectorAll(".resa-project-item");
 
+                        // İlk açılış görseli
+                        changeBackground("img/Menderes.jpg");
+
                         items.forEach(item => {
 
                             item.addEventListener("mouseenter", () => {
 
-                                const bg = item.getAttribute("data-bg");
+                                const bg = item.dataset.bg;
 
-                                items.forEach(el => {
-
-                                    el.style.backgroundImage = `url('${bg}')`;
-
-                                });
+                                changeBackground(bg);
 
                             });
 
                         });
 
+                        function changeBackground(image){
+
+                            items.forEach((el, index) => {
+
+                                el.style.backgroundImage = `url('${image}')`;
+
+                                el.style.backgroundSize = "600% 100%";
+
+                                el.style.backgroundPosition =
+                                    `${index * 20}% center`;
+
+                            });
+
+                        }
+
                     });
 
                     </script>
-
             
         
             <section class="resa-about">
