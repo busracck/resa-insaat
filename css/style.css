@@ -1125,12 +1125,6 @@
   padding: 20px;
 }
 
-/* 5 PARÇA */
-.resa-project-item:nth-child(1) { background-position: 0% center; }
-.resa-project-item:nth-child(2) { background-position: 25% center; }
-.resa-project-item:nth-child(3) { background-position: 50% center; }
-.resa-project-item:nth-child(4) { background-position: 75% center; }
-.resa-project-item:nth-child(5) { background-position: 100% center; }
 
 /* =========================
    PROJELER – MOBİL
@@ -1942,7 +1936,8 @@ body::before {
 
     transition: all 0.5s ease;
 
-    background-size: 600% 100% !important;
+    
+    background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 
@@ -1988,6 +1983,55 @@ body::before {
 
 .resa-project-item:hover {
   filter: blur(0px) brightness(1);
+}
+
+
+.resa-project-item:nth-child(1){
+    background-position:0% center;
+}
+
+.resa-project-item:nth-child(2){
+    background-position:20% center;
+}
+
+.resa-project-item:nth-child(3){
+    background-position:40% center;
+}
+
+.resa-project-item:nth-child(4){
+    background-position:60% center;
+}
+
+.resa-project-item:nth-child(5){
+    background-position:80% center;
+}
+
+.resa-project-item:nth-child(6){
+    background-position:100% center;
+}
+
+.resa-project-images{
+    display:flex;
+    height:520px;
+    overflow:hidden;
+}
+
+.resa-project-item{
+    flex:1;
+
+    background-size:600% 100%;
+    background-repeat:no-repeat;
+
+    transition:0.4s ease;
+
+    position:relative;
+
+    display:flex;
+    align-items:flex-end;
+
+    padding:20px;
+
+    color:white;
 }
 
 
