@@ -1909,89 +1909,19 @@ body::before {
     transform: translateX(-50%);
 }
 
-#resaProjectStrip{
-    min-height: 500px;
-    display: flex;
-    align-items: end;
-}
+/* =========================
+   RESA PROJECT FINAL
+========================= */
 
 .resa-project-images{
-    position: relative;
-    height: 550px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    transition: 0.5s ease;
-}
+    width: 100%;
+    height: 620px;
 
-.resa-project-item{
-    flex: 1;
-    height: 120px;
-    position: relative;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    transition: 0.4s ease;
-    cursor: pointer;
-
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-}
-
-.resa-project-item:hover{
-    height: 160px;
-}
-
-.resa-project-images{
-    height: 600px;
-
-    display: flex;
-    align-items: flex-end;
-
-    background-image: url('../img/Menderes.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    transition: 0.5s ease;
-}
-
-.resa-project-item{
-    flex: 1;
-    height: 140px;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: flex-end;
-
-    padding: 20px;
-
-    color: white;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.4s ease;
-}
-
-.resa-project-item:hover{
-    height: 180px;
-}
-
-
-.resa-project-images{
-    height: 600px;
     display: flex;
     overflow: hidden;
 
+    background-image: url('../img/Menderes.jpg');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2001,39 +1931,51 @@ body::before {
 
 .resa-project-item{
     flex: 1;
+
     position: relative;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    transition: all 0.5s ease;
-    cursor: pointer;
 
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
 
     padding: 20px;
 
-    color: white;
-    font-weight: 600;
-    font-size: 14px;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.resa-project-item:last-child{
+    border-right: none;
 }
 
 .resa-project-item::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.25);
+    transition: 0.4s;
 }
 
 .resa-project-item span{
     position: relative;
     z-index: 2;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /* HOVER */
 .resa-project-item:hover{
-    flex: 3;
+    flex: 4;
+}
+
+.resa-project-item:hover::before{
+    background: rgba(0,0,0,0.05);
 }
