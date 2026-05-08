@@ -1908,3 +1908,9 @@ body::before {
     left: 50%;
     transform: translateX(-50%);
 }
+
+#resaProjectStrip{
+    min-height: 500px;
+    display: flex;
+    align-items: end;
+}

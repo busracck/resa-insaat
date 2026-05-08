@@ -400,31 +400,26 @@
       
   
 <script>
-  const items = document.querySelectorAll(".resa-project-item");
 
-  function isDesktop() {
-    return window.innerWidth > 768;
-  }
+const strip = document.getElementById("resaProjectStrip");
+const items = document.querySelectorAll(".resa-project-item");
 
-  function applyDesktopSlide(slide) {
-    if (!isDesktop()) return;
+items.forEach(item => {
 
-    items.forEach(item => {
-      item.style.backgroundImage = `url('../img/carousel-${slide}.jpg')`;
-    });
-  }
-
-  // İlk açılış
-  applyDesktopSlide(1);
-
-  // SADECE MASAÜSTÜNDE çalışır
-  items.forEach(item => {
     item.addEventListener("mouseenter", () => {
-      if (!isDesktop()) return;
-      const slide = item.dataset.slide;
-      applyDesktopSlide(slide);
+
+        const bg = item.style.backgroundImage;
+
+        strip.style.backgroundImage = bg;
+
+        strip.style.backgroundSize = "cover";
+        strip.style.backgroundPosition = "center";
+        strip.style.transition = "0.5s ease";
+
     });
-  });
+
+});
+
 </script>
 
 
