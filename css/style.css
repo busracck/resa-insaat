@@ -1979,3 +1979,12 @@ body::before {
 .resa-project-item:hover::before{
     background: rgba(0,0,0,0.05);
 }
+
+
+.resa-project-item {
+  filter: blur(2px) brightness(0.7);
+}
+
+.resa-project-item:hover {
+  filter: blur(0px) brightness(1);
+}
