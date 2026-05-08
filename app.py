@@ -8,7 +8,7 @@ mesaj_listesi = []
 # Anasayfa
 @app.route('/')
 def index():
-    return send_from_directory('.', 'index.html')
+    return send_from_directory('.', 'indexgercek.html')
 
 # Diğer HTML, CSS, JS dosyalarını sunmak için
 @app.route('/<path:filename>')
