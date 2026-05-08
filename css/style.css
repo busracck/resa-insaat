@@ -892,7 +892,6 @@
   align-items: flex-end;
   padding: 20px;
   background-size: cover;
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s ease;
@@ -1193,7 +1192,7 @@
   inset: 0;
 
   background-image: url("../img/carouselblog.jpg");
-  background-size: cover;
+  background-size: 600% 100%;
   background-position: center;
 
   filter: blur(6px) brightness(0.6);
