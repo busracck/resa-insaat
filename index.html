@@ -398,34 +398,12 @@
     </a>
    
       
-  
-<script>
-  const items = document.querySelectorAll(".resa-project-item");
 
-  function isDesktop() {
-    return window.innerWidth > 768;
-  }
 
-  function applyDesktopSlide(slide) {
-    if (!isDesktop()) return;
 
-    items.forEach(item => {
-      item.style.backgroundImage = `url('../img/carousel-${slide}.jpg')`;
-    });
-  }
 
-  // İlk açılış
-  applyDesktopSlide(1);
 
-  // SADECE MASAÜSTÜNDE çalışır
-  items.forEach(item => {
-    item.addEventListener("mouseenter", () => {
-      if (!isDesktop()) return;
-      const slide = item.dataset.slide;
-      applyDesktopSlide(slide);
-    });
-  });
-</script>
+    
 
 
 <script>
