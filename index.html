@@ -212,7 +212,6 @@
 
                     document.addEventListener("DOMContentLoaded", () => {
 
-                        const strip = document.getElementById("resaProjectStrip");
                         const items = document.querySelectorAll(".resa-project-item");
 
                         items.forEach(item => {
@@ -221,7 +220,11 @@
 
                                 const bg = item.getAttribute("data-bg");
 
-                                strip.style.backgroundImage = `url('${bg}')`;
+                                items.forEach(el => {
+
+                                    el.style.backgroundImage = `url('${bg}')`;
+
+                                });
 
                             });
 
