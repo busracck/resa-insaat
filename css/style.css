@@ -2128,8 +2128,9 @@ body::before {
     align-items:flex-end;
 
     padding:20px;
+    background: rgba(0,0,0,0.18);
 
-    backdrop-filter: blur(3px);
+    
 
     transition:0.4s ease;
 }
@@ -2143,3 +2144,4 @@ body::before {
     color:#fff;
     font-weight:600;
 }
+
