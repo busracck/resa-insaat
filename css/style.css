@@ -2094,3 +2094,52 @@ body::before {
 .resa-project-item{
     flex:1;
 }
+
+
+.resa-project-images{
+    position:relative;
+    display:flex;
+    height:520px;
+    overflow:hidden;
+}
+
+/* TEK BÜYÜK GÖRSEL */
+.resa-panorama{
+    position:absolute;
+    inset:0;
+
+    background-image:url('../img/Menderes.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    transition:0.5s ease;
+}
+
+/* KOLONLAR */
+.resa-project-item{
+    flex:1;
+    position:relative;
+    z-index:2;
+
+    border-right:1px solid rgba(255,255,255,0.3);
+
+    display:flex;
+    align-items:flex-end;
+
+    padding:20px;
+
+    backdrop-filter: blur(3px);
+
+    transition:0.4s ease;
+}
+
+.resa-project-item:hover{
+    backdrop-filter: blur(0px);
+    background:rgba(255,255,255,0.03);
+}
+
+.resa-project-item span{
+    color:#fff;
+    font-weight:600;
+}

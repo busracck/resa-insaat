@@ -153,20 +153,21 @@
         
 
                 <!-- PROJELER -->
-<section class="resa-project-strip">
+                <section class="resa-project-strip">
 
-    <!-- BAŞLIK -->
-    <div class="resa-project-header">
+                    <!-- BAŞLIK -->
+                    <div class="resa-project-header">
 
-        <h2>Projeler</h2>
-        <a href="projeler.html" class="btn btn-dark">
-            Tüm Projelerimiz
-        </a>
+                        <h2>Projeler</h2>
+                        <a href="projeler.html" class="btn btn-dark">
+                            Tüm Projelerimiz
+                        </a>
 
-    </div>
+                    </div>
 
-                <!-- PROJE ALANI -->
-                <div class="resa-project-images">
+                            <div class="resa-project-images">
+
+                    <div class="resa-panorama"></div>
 
                     <div class="resa-project-item" data-bg="img/Menderes.jpg">
                         <span>RESA MENDERES</span>
@@ -196,50 +197,31 @@
 
                 
                 
-
-                
+      
 
             </section>
 
                     <script>
 
-                    document.addEventListener("DOMContentLoaded", () => {
+                        document.addEventListener("DOMContentLoaded", () => {
 
-                        const items = document.querySelectorAll(".resa-project-item");
+                            const pano = document.querySelector(".resa-panorama");
+                            const items = document.querySelectorAll(".resa-project-item");
 
-                        // İlk açılış görseli
-                        changeBackground("img/Menderes.jpg");
+                            items.forEach(item => {
 
-                        items.forEach(item => {
+                                item.addEventListener("mouseenter", () => {
 
-                            item.addEventListener("mouseenter", () => {
+                                    pano.style.backgroundImage =
+                                        `url('${item.dataset.bg}')`;
 
-                                const bg = item.dataset.bg;
-
-                                changeBackground(bg);
+                                });
 
                             });
 
                         });
 
-                        function changeBackground(image){
-
-                            items.forEach((el, index) => {
-
-                                el.style.backgroundImage = `url('${image}')`;
-
-                                el.style.backgroundSize = "100vw 100%";
-
-                                el.style.backgroundPosition =
-                                    `${-index * (100 / 5)}vw center`
-
-                            });
-
-                        }
-
-                    });
-
-                    </script>
+                        </script>
             
         
             <section class="resa-about">
