@@ -169,7 +169,8 @@
                 <div class="resa-project-images">
 
                     <div class="resa-project-item"
-                        style="background-image:url('img/Menderes.jpg')">
+                    data-bg="img/Menderes.jpg"
+                    style="background-image:url('img/Menderes.jpg')">
                         <span>RESA MENDERES</span>
                     </div>
 
@@ -200,8 +201,7 @@
 
                 </div>
 
-                    
-
+                
                 
 
                 
@@ -477,7 +477,29 @@ items.forEach(item => {
   });
 </script>
 
+<script>
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    const items = document.querySelectorAll(".resa-project-item");
+
+    items.forEach(item => {
+
+        item.addEventListener("mouseenter", () => {
+
+            const bg = item.getAttribute("data-bg");
+
+            items.forEach(el => {
+                el.style.backgroundImage = `url('${bg}')`;
+            });
+
+        });
+
+    });
+
+});
+
+</script>
 
     </body>
 
