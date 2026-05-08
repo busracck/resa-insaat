@@ -1970,10 +1970,12 @@ body::before {
     font-weight: 600;
 }
 
-/* HOVER */
+
 .resa-project-item:hover{
-    flex: 4;
+    filter: blur(0px) brightness(1);
 }
+
+
 
 .resa-project-item:hover::before{
     background: rgba(0,0,0,0.05);
