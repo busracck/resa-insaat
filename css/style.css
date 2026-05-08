@@ -1908,12 +1908,3 @@ body::before {
     left: 50%;
     transform: translateX(-50%);
 }
-
-.resa-project-item{
-    position: relative;
-    min-height: 480px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
