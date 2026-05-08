@@ -1942,7 +1942,7 @@ body::before {
 
     transition: all 0.5s ease;
 
-    background-size: cover !important;
+    background-size: 600% 100% !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 
@@ -1986,4 +1986,29 @@ body::before {
 
 .resa-project-item:hover {
   filter: blur(0px) brightness(1);
+}
+
+
+.resa-project-item:nth-child(1){
+    background-position:0% center;
+}
+
+.resa-project-item:nth-child(2){
+    background-position:20% center;
+}
+
+.resa-project-item:nth-child(3){
+    background-position:40% center;
+}
+
+.resa-project-item:nth-child(4){
+    background-position:60% center;
+}
+
+.resa-project-item:nth-child(5){
+    background-position:80% center;
+}
+
+.resa-project-item:nth-child(6){
+    background-position:100% center;
 }
