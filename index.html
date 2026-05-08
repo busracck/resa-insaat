@@ -210,7 +210,28 @@
 
             </section>
 
+                    <script>
 
+                    document.addEventListener("DOMContentLoaded", () => {
+
+                        const strip = document.getElementById("resaProjectStrip");
+                        const items = document.querySelectorAll(".resa-project-item");
+
+                        items.forEach(item => {
+
+                            item.addEventListener("mouseenter", () => {
+
+                                const bg = item.getAttribute("data-bg");
+
+                                strip.style.backgroundImage = `url('${bg}')`;
+
+                            });
+
+                        });
+
+                    });
+
+                    </script>
 
             
         

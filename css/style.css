@@ -1985,3 +1985,55 @@ body::before {
 .resa-project-item:hover{
     height: 180px;
 }
+
+
+.resa-project-images{
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 0.5s ease;
+}
+
+.resa-project-item{
+    flex: 1;
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    padding: 20px;
+
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.resa-project-item::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.resa-project-item span{
+    position: relative;
+    z-index: 2;
+}
+
+/* HOVER */
+.resa-project-item:hover{
+    flex: 3;
+}
