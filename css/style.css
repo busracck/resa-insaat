@@ -1143,9 +1143,6 @@
     width: 100% !important;
     height: 320px !important;
 
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
 
     /* 🔥 BOŞLUK YOK */
     margin: 0 !important;
@@ -1909,77 +1906,49 @@ body::before {
 ========================= */
 
 .resa-project-images{
-    width: 100%;
-    height: 620px;
-
-    display: flex;
-    overflow: hidden;
-
-    background-image: url('../img/Menderes.jpg');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    transition: 0.5s ease;
+    display:flex;
+    width:100%;
+    height:520px;
+    overflow:hidden;
 }
 
 .resa-project-item{
-    flex: 1;
+    flex:1;
 
-    position: relative;
+    position:relative;
 
-    display: flex;
-    align-items: flex-end;
+    display:flex;
+    align-items:flex-end;
 
-    padding: 20px;
+    padding:20px;
 
-    cursor: pointer;
+    color:#fff;
 
-    transition: all 0.5s ease;
+    cursor:pointer;
 
-    
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    border-right:1px solid rgba(255,255,255,0.3);
 
-    border-right: 1px solid rgba(255,255,255,0.3);
+    background-size:600% 100%;
+    background-repeat:no-repeat;
+
+    transition:0.4s ease;
 }
 
 .resa-project-item:last-child{
-    border-right: none;
+    border-right:none;
 }
-
 
 .resa-project-item span{
-    position: relative;
-    z-index: 2;
+    position:relative;
+    z-index:2;
 
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
+    font-size:15px;
+    font-weight:600;
+
+    text-shadow:0 3px 10px rgba(0,0,0,0.7);
 }
 
-
-.resa-project-item:hover{
-    filter: blur(0px) brightness(1);
-}
-
-
-
-.resa-project-item:hover::before{
-    background: rgba(0,0,0,0.05);
-}
-
-
-.resa-project-item {
-  filter: blur(2px) brightness(0.7);
-}
-
-.resa-project-item:hover {
-  filter: blur(0px) brightness(1);
-}
-
+/* 6 PARÇA */
 
 .resa-project-item:nth-child(1){
     background-position:0% center;
@@ -2005,123 +1974,11 @@ body::before {
     background-position:100% center;
 }
 
-.resa-project-images{
-    display:flex;
-    height:520px;
-    overflow:hidden;
+/* Hover */
+
+.resa-project-item:hover{
+    filter:brightness(1.05);
 }
 
-.resa-project-item{
-    flex:1;
-
-    background-size:600% 100%;
-    background-repeat:no-repeat;
-
-    transition:0.4s ease;
-
-    position:relative;
-
-    display:flex;
-    align-items:flex-end;
-
-    padding:20px;
-
-    color:white;
-}
-
-
-.resa-project-images{
-    display:flex;
-    height:520px;
-    overflow:hidden;
-}
-
-.resa-project-item{
-    flex:1;
-
-    background-size:600% 100%;
-    background-repeat:no-repeat;
-
-    position:relative;
-
-    display:flex;
-    align-items:flex-end;
-
-    padding:20px;
-
-    transition:0.4s ease;
-
-    color:#fff;
-}
-
-/* RESMİ 6 PARÇAYA BÖL */
-.resa-project-item:nth-child(1){
-    background-position:0% 0%;
-}
-
-.resa-project-item:nth-child(2){
-    background-position:20% 0%;
-}
-
-.resa-project-item:nth-child(3){
-    background-position:40% 0%;
-}
-
-.resa-project-item:nth-child(4){
-    background-position:60% 0%;
-}
-
-.resa-project-item:nth-child(5){
-    background-position:80% 0%;
-}
-
-.resa-project-item:nth-child(6){
-    background-position:100% 0%;
-}
-
-
-.resa-project-images{
-    display:flex;
-    height:520px;
-    overflow:hidden;
-}
-
-.resa-project-item{
-    flex:1;
-}
-
-
-.resa-project-images{
-    position:relative;
-    display:flex;
-    height:520px;
-    overflow:hidden;
-}
-
-.resa-project-images{
-    position:relative;
-    display:flex;
-    width:100%;
-    height:500px;
-    overflow:hidden;
-}
-
-
-
-.resa-project-item{
-    flex:1;
-    position:relative;
-
-    border-right:1px solid rgba(255,255,255,0.3);
-
-    z-index:2;
-
-    display:flex;
-    align-items:flex-end;
-
-    padding:20px;
-
-    cursor:pointer;
-}
 
 
