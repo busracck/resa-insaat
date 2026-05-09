@@ -1990,16 +1990,21 @@ body::before {
 
     .resa-project-item{
         width:100%;
-        height:260px;
+        height:320px;
+
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.2);
 
         background-size:cover !important;
-        background-position:center 35% !important;
+
+        /* GÖRSELİ AŞAĞI İNDİRİR */
+        background-position:center 85% !important;
 
         transition:0.3s;
     }
 
     .resa-project-item:hover{
-        transform:scale(1.02);
+        transform:none;
     }
 
 }
