@@ -207,24 +207,26 @@
 
                         const items = document.querySelectorAll(".resa-project-item");
 
-                        // MOBİLDE PANORAMA ÇALIŞMASIN
+                        // MOBİL
                         if(window.innerWidth <= 768){
 
                             items.forEach(item => {
 
-                                const bg = item.dataset.bg;
+                                item.style.backgroundImage =
+                                    `url('${item.dataset.bg}')`;
 
-                                item.style.backgroundImage = `url('${bg}')`;
+                                item.style.backgroundSize = "cover";
+                                item.style.backgroundPosition = "center";
 
                             });
 
                             return;
                         }
 
-                        // DESKTOP PANORAMA
+                        // DESKTOP
                         function setPanorama(img){
 
-                            items.forEach((item, index) => {
+                            items.forEach((item,index) => {
 
                                 item.style.backgroundImage = `url('${img}')`;
 
@@ -254,7 +256,6 @@
                     });
 
                     </script>
-        
             <section class="resa-about">
                 <div class="container-fluid px-0">
                     <div class="row g-0 align-items-center">
