@@ -956,21 +956,28 @@
   padding: 20px;
 }
 
-/* PARSEL DAĞILIMI */
-.resa-project-item:nth-child(1) {
-  background-position: 0% center;
+.resa-project-item:nth-child(2){
+    background-position:0% 0%;
 }
-.resa-project-item:nth-child(2) {
-  background-position: 25% center;
+
+.resa-project-item:nth-child(3){
+    background-position:20% 0%;
 }
-.resa-project-item:nth-child(3) {
-  background-position: 50% center;
+
+.resa-project-item:nth-child(4){
+    background-position:40% 0%;
 }
-.resa-project-item:nth-child(4) {
-  background-position: 75% center;
+
+.resa-project-item:nth-child(5){
+    background-position:60% 0%;
 }
-.resa-project-item:nth-child(5) {
-  background-position: 100% center;
+
+.resa-project-item:nth-child(6){
+    background-position:80% 0%;
+}
+
+.resa-project-item:nth-child(7){
+    background-position:100% 0%;
 }
 
 /* ALT YAZI */
@@ -1081,10 +1088,6 @@
     width: 100% !important;
     height: 320px;
 
-    /* 🔥 PARSEL SİSTEMİNİ KAPAT */
-    background-size: cover !important;
-    background-position: center !important;
-
     /* GEREKSİZ HER ŞEYİ EZ */
     border: none !important;
     filter: none !important;
@@ -1119,7 +1122,6 @@
 .resa-project-item {
   flex: 1;
   position: relative;
-  background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -1948,13 +1950,6 @@ body::before {
     border-right: none;
 }
 
-.resa-project-item::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.25);
-    transition: 0.4s;
-}
 
 .resa-project-item span{
     position: relative;
@@ -2111,16 +2106,7 @@ body::before {
     overflow:hidden;
 }
 
-.resa-panorama{
-    position:absolute;
-    inset:0;
 
-    background-size:cover;
-    background-position:center;
-
-    transition:0.5s ease;
-    z-index:1;
-}
 
 .resa-project-item{
     flex:1;
@@ -2138,11 +2124,4 @@ body::before {
     cursor:pointer;
 }
 
-.resa-project-item span{
-    color:white;
-    font-weight:600;
-    font-size:14px;
-    position:relative;
-    z-index:3;
-}
 

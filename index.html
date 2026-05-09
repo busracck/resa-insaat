@@ -201,11 +201,9 @@
 
             </section>
 
-                   <script>
-
+                  <script>
                     document.addEventListener("DOMContentLoaded", () => {
 
-                        const panorama = document.querySelector(".resa-panorama");
                         const items = document.querySelectorAll(".resa-project-item");
 
                         items.forEach(item => {
@@ -214,14 +212,15 @@
 
                                 const bg = item.getAttribute("data-bg");
 
-                                panorama.style.backgroundImage = `url('${bg}')`;
+                                items.forEach(el => {
+                                    el.style.backgroundImage = `url('${bg}')`;
+                                });
 
                             });
 
                         });
 
                     });
-
                     </script>
         
             <section class="resa-about">
