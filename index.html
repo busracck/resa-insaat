@@ -455,71 +455,31 @@
 
 
 
-<script>
-  const counters = document.querySelectorAll('.resa-counter');
+                <script>
+                const counters = document.querySelectorAll('.resa-counter');
 
-  const speed = 200; // küçült → daha hızlı
+                const speed = 200; // küçült → daha hızlı
 
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
 
-      const increment = Math.ceil(target / speed);
+                    const increment = Math.ceil(target / speed);
 
-      if (count < target) {
-        counter.innerText = count + increment;
-        setTimeout(updateCount, 20);
-      } else {
-        counter.innerText = target + "+";
-      }
-    };
+                    if (count < target) {
+                        counter.innerText = count + increment;
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target + "+";
+                    }
+                    };
 
-    updateCount();
-  });
-</script>
+                    updateCount();
+                });
+                </script>
 
 
-<script>
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const items = document.querySelectorAll(".resa-project-item");
-
-    function setPanorama(img){
-
-        items.forEach((item, index) => {
-
-            item.style.backgroundImage = `url('${img}')`;
-
-            item.style.backgroundRepeat = "no-repeat";
-
-            item.style.backgroundSize = "600% 100%";
-
-            item.style.backgroundPosition =
-                `${index * 20}% center`;
-
-        });
-
-    }
-
-    // İlk açılış
-    setPanorama("img/Menderes.jpg");
-
-    // Hover değişimi
-    items.forEach(item => {
-
-        item.addEventListener("mouseenter", () => {
-
-            setPanorama(item.dataset.bg);
-
-        });
-
-    });
-
-});
-
-</script>
 
 
     </body>
