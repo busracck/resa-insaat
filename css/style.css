@@ -1979,3 +1979,27 @@ body::before {
     }
 
 }
+
+
+@media (max-width:768px){
+
+    .resa-project-images{
+        display:block;
+        height:auto;
+    }
+
+    .resa-project-item{
+        width:100%;
+        height:260px;
+
+        background-size:cover !important;
+        background-position:center !important;
+
+        transition:0.3s;
+    }
+
+    .resa-project-item:hover{
+        transform:scale(1.02);
+    }
+
+}

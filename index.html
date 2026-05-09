@@ -207,21 +207,22 @@
 
                         const items = document.querySelectorAll(".resa-project-item");
 
-                        // MOBİL
-                        if(window.innerWidth <= 768){
+                      if(window.innerWidth <= 768){
 
-                            items.forEach(item => {
+                        items.forEach(item => {
 
-                                item.style.backgroundImage =
-                                    `url('${item.dataset.bg}')`;
+                            item.style.backgroundImage =
+                                `url('${item.dataset.bg}')`;
 
-                                item.style.backgroundSize = "cover";
-                                item.style.backgroundPosition = "center";
+                            item.style.backgroundSize = "cover";
+                            item.style.backgroundPosition = "center";
+                            item.style.backgroundRepeat = "no-repeat";
 
-                            });
+                        });
 
-                            return;
-                        }
+                        // MOBİLDE PANORAMAYI DURDUR
+                        return;
+                    }
 
                         // DESKTOP
                         function setPanorama(img){
