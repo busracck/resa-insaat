@@ -2014,3 +2014,16 @@ body::before {
   }
 
 }
+
+/* MOBİL FIX */
+@media screen and (max-width:768px){
+
+    .resa-project-item{
+
+        background-size:cover !important;
+        background-position:center !important;
+        background-repeat:no-repeat !important;
+
+    }
+
+}
