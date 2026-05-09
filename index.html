@@ -202,25 +202,57 @@
             </section>
 
                   <script>
+
                     document.addEventListener("DOMContentLoaded", () => {
 
                         const items = document.querySelectorAll(".resa-project-item");
+
+                        // MOBİLDE PANORAMA ÇALIŞMASIN
+                        if(window.innerWidth <= 768){
+
+                            items.forEach(item => {
+
+                                const bg = item.dataset.bg;
+
+                                item.style.backgroundImage = `url('${bg}')`;
+
+                            });
+
+                            return;
+                        }
+
+                        // DESKTOP PANORAMA
+                        function setPanorama(img){
+
+                            items.forEach((item, index) => {
+
+                                item.style.backgroundImage = `url('${img}')`;
+
+                                item.style.backgroundRepeat = "no-repeat";
+
+                                item.style.backgroundSize = "600% 100%";
+
+                                item.style.backgroundPosition =
+                                    `${index * 20}% center`;
+
+                            });
+
+                        }
+
+                        setPanorama("img/Menderes.jpg");
 
                         items.forEach(item => {
 
                             item.addEventListener("mouseenter", () => {
 
-                                const bg = item.getAttribute("data-bg");
-
-                                items.forEach(el => {
-                                    el.style.backgroundImage = `url('${bg}')`;
-                                });
+                                setPanorama(item.dataset.bg);
 
                             });
 
                         });
 
                     });
+
                     </script>
         
             <section class="resa-about">

@@ -1982,3 +1982,35 @@ body::before {
 
 
 
+/* =========================
+   MOBİL PROJELER DÜZELTME
+========================= */
+
+@media (max-width: 768px){
+
+  .resa-project-images{
+    display:block !important;
+    height:auto !important;
+  }
+
+  .resa-project-item{
+    width:100% !important;
+    height:260px !important;
+
+    background-size:cover !important;
+    background-position:center !important;
+
+    flex:none !important;
+
+    border-right:none !important;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+
+    display:flex;
+    align-items:flex-end;
+  }
+
+  .resa-project-item:last-child{
+    border-bottom:none;
+  }
+
+}
