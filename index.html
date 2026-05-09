@@ -201,28 +201,28 @@
 
             </section>
 
-                    <script>
+                   <script>
 
-                        document.addEventListener("DOMContentLoaded", () => {
+                    document.addEventListener("DOMContentLoaded", () => {
 
-                            const pano = document.querySelector(".resa-panorama");
-                            const items = document.querySelectorAll(".resa-project-item");
+                        const panorama = document.querySelector(".resa-panorama");
+                        const items = document.querySelectorAll(".resa-project-item");
 
-                            items.forEach(item => {
+                        items.forEach(item => {
 
-                                item.addEventListener("mouseenter", () => {
+                            item.addEventListener("mouseenter", () => {
 
-                                    pano.style.backgroundImage =
-                                        `url('${item.dataset.bg}')`;
+                                const bg = item.getAttribute("data-bg");
 
-                                });
+                                panorama.style.backgroundImage = `url('${bg}')`;
 
                             });
 
                         });
 
-                        </script>
-            
+                    });
+
+                    </script>
         
             <section class="resa-about">
                 <div class="container-fluid px-0">

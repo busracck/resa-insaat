@@ -2103,45 +2103,46 @@ body::before {
     overflow:hidden;
 }
 
-/* TEK BÜYÜK GÖRSEL */
+.resa-project-images{
+    position:relative;
+    display:flex;
+    width:100%;
+    height:500px;
+    overflow:hidden;
+}
+
 .resa-panorama{
     position:absolute;
     inset:0;
-
-    background-image:url('../img/Menderes.jpg');
 
     background-size:cover;
     background-position:center;
 
     transition:0.5s ease;
+    z-index:1;
 }
 
-/* KOLONLAR */
 .resa-project-item{
     flex:1;
     position:relative;
-    z-index:2;
 
     border-right:1px solid rgba(255,255,255,0.3);
+
+    z-index:2;
 
     display:flex;
     align-items:flex-end;
 
     padding:20px;
-    background: rgba(0,0,0,0.18);
 
-    
-
-    transition:0.4s ease;
-}
-
-.resa-project-item:hover{
-    backdrop-filter: blur(0px);
-    background:rgba(255,255,255,0.03);
+    cursor:pointer;
 }
 
 .resa-project-item span{
-    color:#fff;
+    color:white;
     font-weight:600;
+    font-size:14px;
+    position:relative;
+    z-index:3;
 }
 
