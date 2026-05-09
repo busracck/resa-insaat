@@ -1998,13 +1998,13 @@ body::before {
         background-size:cover !important;
 
         /* GÖRSELİ AŞAĞI İNDİRİR */
-        background-position:center 85% !important;
+        background-position:center 5% !important;
 
         transition:0.3s;
     }
 
-    .resa-project-item:hover{
-        transform:none;
-    }
+    .resa-project-item:active{
+    transform:scale(0.98);
+}
 
 }
