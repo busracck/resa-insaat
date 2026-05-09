@@ -1993,7 +1993,7 @@ body::before {
         height:260px;
 
         background-size:cover !important;
-        background-position:center !important;
+        background-position:center 35% !important;
 
         transition:0.3s;
     }
