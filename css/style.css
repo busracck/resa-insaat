@@ -2357,30 +2357,31 @@ body::before {
 }
 
 .completed-liva-showcase {
-    width: min(1120px, calc(100% - 48px));
-    margin: 78px auto 0;
+    width: min(1240px, calc(100% - 48px));
+    margin: 86px auto 0;
     display: grid;
-    grid-template-columns: minmax(0, 1.18fr) minmax(360px, 0.82fr);
-    gap: 0;
-    background: #fff;
-    border: 1px solid #e8e8e8;
-    box-shadow: 0 24px 70px rgba(11,28,45,0.08);
+    grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr);
+    gap: 12px;
+    padding: 12px;
+    background: #0a111b;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 30px 90px rgba(11,28,45,0.22);
 }
 
 .completed-liva-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(4, 140px);
-    gap: 8px;
-    padding: 8px;
-    background: #111;
+    grid-template-rows: repeat(4, 155px);
+    gap: 10px;
+    padding: 0;
+    background: transparent;
 }
 
 .completed-liva-gallery a {
     position: relative;
     overflow: hidden;
     display: block;
-    background: #222;
+    background: #111;
 }
 
 .completed-liva-gallery a::after,
@@ -2411,7 +2412,7 @@ body::before {
 
 .completed-liva-gallery a:hover img,
 .completed-gallery-strip a:hover img {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .completed-liva-media {
@@ -2427,13 +2428,14 @@ body::before {
 }
 
 .completed-liva-content {
-    padding: 48px;
+    padding: 46px 38px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background:
-        linear-gradient(135deg, rgba(11,28,45,0.04), rgba(255,255,255,0) 46%),
-        #fff;
+        radial-gradient(circle at top right, rgba(255,255,255,0.11), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
 }
 
 .completed-liva-content h2 {
@@ -2441,12 +2443,16 @@ body::before {
     font-family: "Playfair Display", serif;
     font-size: 48px;
     line-height: 1.05;
-    color: #0b1c2d;
+    color: #fff;
+}
+
+.completed-liva-content .completed-project-location {
+    color: rgba(255,255,255,0.58);
 }
 
 .completed-liva-content p {
     margin: 0 0 16px;
-    color: #58626d;
+    color: rgba(255,255,255,0.72);
     line-height: 1.75;
 }
 
@@ -2455,11 +2461,11 @@ body::before {
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     margin: 26px 0;
-    background: #ddd;
+    background: rgba(255,255,255,0.12);
 }
 
 .completed-liva-stats div {
-    background: #fff;
+    background: rgba(255,255,255,0.07);
     padding: 20px 16px;
 }
 
@@ -2468,13 +2474,13 @@ body::before {
     font-family: "Playfair Display", serif;
     font-size: 34px;
     line-height: 1;
-    color: #0b1c2d;
+    color: #fff;
 }
 
 .completed-liva-stats span {
     display: block;
     margin-top: 7px;
-    color: #66717d;
+    color: rgba(255,255,255,0.62);
     font-size: 13px;
     font-weight: 700;
 }
@@ -2487,15 +2493,15 @@ body::before {
 
 .completed-liva-features span {
     padding: 9px 12px;
-    background: #fff;
-    border: 1px solid #e2e2e2;
-    color: #1e2936;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.14);
+    color: rgba(255,255,255,0.86);
     font-size: 13px;
     font-weight: 600;
 }
 
 .completed-gallery-strip {
-    width: min(1120px, calc(100% - 48px));
+    width: min(1240px, calc(100% - 48px));
     margin: 22px auto 0;
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -2508,6 +2514,7 @@ body::before {
     aspect-ratio: 4 / 3;
     overflow: hidden;
     background: #111;
+    box-shadow: 0 12px 34px rgba(11,28,45,0.12);
 }
 
 .completed-gallery-strip img {
@@ -2516,6 +2523,16 @@ body::before {
     object-fit: cover;
     display: block;
     transition: transform 0.4s ease;
+}
+
+.completed-project-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.completed-project-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(11,28,45,0.18);
+    box-shadow: 0 24px 60px rgba(11,28,45,0.12);
 }
 
 .completed-project-card {
