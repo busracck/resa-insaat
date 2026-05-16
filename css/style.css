@@ -2360,9 +2360,58 @@ body::before {
     width: min(1120px, calc(100% - 48px));
     margin: 78px auto 0;
     display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
-    background: #f6f6f6;
+    grid-template-columns: minmax(0, 1.18fr) minmax(360px, 0.82fr);
+    gap: 0;
+    background: #fff;
     border: 1px solid #e8e8e8;
+    box-shadow: 0 24px 70px rgba(11,28,45,0.08);
+}
+
+.completed-liva-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(4, 140px);
+    gap: 8px;
+    padding: 8px;
+    background: #111;
+}
+
+.completed-liva-gallery a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background: #222;
+}
+
+.completed-liva-gallery a::after,
+.completed-gallery-strip a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: background 0.3s ease;
+}
+
+.completed-liva-gallery a:hover::after,
+.completed-gallery-strip a:hover::after {
+    background: rgba(0,0,0,0.18);
+}
+
+.completed-liva-main {
+    grid-row: span 4;
+}
+
+.completed-liva-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.completed-liva-gallery a:hover img,
+.completed-gallery-strip a:hover img {
+    transform: scale(1.05);
 }
 
 .completed-liva-media {
@@ -2382,6 +2431,9 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background:
+        linear-gradient(135deg, rgba(11,28,45,0.04), rgba(255,255,255,0) 46%),
+        #fff;
 }
 
 .completed-liva-content h2 {
@@ -2440,6 +2492,30 @@ body::before {
     color: #1e2936;
     font-size: 13px;
     font-weight: 600;
+}
+
+.completed-gallery-strip {
+    width: min(1120px, calc(100% - 48px));
+    margin: 22px auto 0;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.completed-gallery-strip a {
+    position: relative;
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #111;
+}
+
+.completed-gallery-strip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .completed-project-card {
@@ -2566,8 +2642,12 @@ body::before {
         grid-template-columns: 1fr;
     }
 
-    .completed-liva-media {
-        min-height: 360px;
+    .completed-liva-gallery {
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    .completed-liva-main {
+        grid-row: span 3;
     }
 
     .completed-liva-content {
@@ -2635,8 +2715,31 @@ body::before {
         margin-top: 52px;
     }
 
-    .completed-liva-media {
-        min-height: 280px;
+    .completed-liva-gallery {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .completed-liva-gallery a,
+    .completed-liva-main {
+        min-width: 82%;
+        height: 260px;
+        scroll-snap-align: start;
+    }
+
+    .completed-gallery-strip {
+        width: calc(100% - 32px);
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 4px;
+    }
+
+    .completed-gallery-strip a {
+        min-width: 58%;
     }
 
     .completed-liva-content {
