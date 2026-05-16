@@ -2170,7 +2170,7 @@ body::before {
     }
 
     .resa-project-images .resa-project-item:nth-child(3) {
-        background-image: url("../img/carousel-3.jpg") !important;
+        background-image: url("../img/carousel-2.jpg") !important;
     }
 
     .resa-project-images .resa-project-item:nth-child(4) {
@@ -2182,7 +2182,7 @@ body::before {
     }
 
     .resa-project-images .resa-project-item:nth-child(6) {
-        background-image: url("../img/carousel-1.jpg") !important;
+        background-image: url("../img/carouselblog.jpg") !important;
     }
 
     .resa-project-item:hover {
