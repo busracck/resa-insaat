@@ -2185,7 +2185,32 @@ body::before {
 
     .resa-project-strip + .resa-about {
         margin-top: 0 !important;
-        padding-top: 44px !important;
+        padding-top: 76px !important;
+    }
+
+    .resa-about {
+        margin-top: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .resa-about .col-lg-6.p-0 {
+        padding-top: 36px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .resa-about-img {
+        display: block;
+        width: 100%;
+        height: auto !important;
+        min-height: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .resa-about .col-lg-6:last-child {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
     }
 }
 
@@ -2200,5 +2225,22 @@ body::before {
         height: 270px !important;
         border-radius: 0;
         border-bottom: 1px solid rgba(255,255,255,0.25) !important;
+    }
+
+    .resa-project-strip + .resa-about {
+        padding-top: 44px !important;
+    }
+
+    .resa-about .col-lg-6.p-0 {
+        padding-top: 0 !important;
+    }
+
+    .resa-about-img {
+        margin-top: 72px !important;
+    }
+
+    .resa-about .col-lg-6:last-child {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
