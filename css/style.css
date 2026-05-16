@@ -1750,7 +1750,7 @@ html, body {
 
 /* NAVBAR LOGO */
 .navbar-logo {
-  height: 42px;        /* ideal masaüstü */
+  height: 46px;
   width: auto;
   display: block;
 }
@@ -1758,7 +1758,7 @@ html, body {
 /* Mobilde biraz küçült */
 @media (max-width: 768px) {
   .navbar-logo {
-    height: 34px;
+    height: 40px;
   }
 }
 
