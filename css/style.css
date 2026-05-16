@@ -2156,6 +2156,7 @@ body::before {
         border: 0 !important;
         border-radius: 6px;
         overflow: hidden;
+        background-image: var(--project-bg) !important;
         background-size: cover !important;
         background-position: center center !important;
     }
