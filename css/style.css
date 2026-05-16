@@ -2161,6 +2161,30 @@ body::before {
         background-position: center center !important;
     }
 
+    .resa-project-images .resa-project-item:nth-child(1) {
+        background-image: url("../img/Menderes.jpg") !important;
+    }
+
+    .resa-project-images .resa-project-item:nth-child(2) {
+        background-image: url("../img/Gorece.jpg") !important;
+    }
+
+    .resa-project-images .resa-project-item:nth-child(3) {
+        background-image: url("../img/carousel-3.jpg") !important;
+    }
+
+    .resa-project-images .resa-project-item:nth-child(4) {
+        background-image: url("../img/carousel-2.jpg") !important;
+    }
+
+    .resa-project-images .resa-project-item:nth-child(5) {
+        background-image: url("../img/carouselblog.jpg") !important;
+    }
+
+    .resa-project-images .resa-project-item:nth-child(6) {
+        background-image: url("../img/carousel-1.jpg") !important;
+    }
+
     .resa-project-item:hover {
         flex: initial !important;
         filter: none !important;
