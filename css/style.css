@@ -2013,10 +2013,14 @@ body::before {
     .resa-about {
         margin-top: 0 !important;
         padding-top: 24px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .resa-about .col-lg-6.p-0 {
         padding-top: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .resa-about-img {
@@ -2025,5 +2029,10 @@ body::before {
         height: auto !important;
         min-height: 0 !important;
         margin-top: 72px !important;
+    }
+
+    .resa-about .col-lg-6:last-child {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
