@@ -2716,30 +2716,34 @@ body::before {
     }
 
     .completed-liva-gallery {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 10px;
-        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 8px;
+        padding: 8px;
+        overflow: visible;
     }
 
-    .completed-liva-gallery a,
+    .completed-liva-gallery a {
+        height: 170px;
+        min-width: 0;
+    }
+
     .completed-liva-main {
-        min-width: 82%;
-        height: 260px;
-        scroll-snap-align: start;
+        grid-column: 1 / -1;
+        height: 270px !important;
     }
 
     .completed-gallery-strip {
         width: calc(100% - 32px);
-        display: flex;
-        overflow-x: auto;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
         padding-bottom: 4px;
     }
 
     .completed-gallery-strip a {
-        min-width: 58%;
+        min-width: 0;
     }
 
     .completed-liva-content {
