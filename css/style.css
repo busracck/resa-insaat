@@ -2012,16 +2012,18 @@ body::before {
 @media (max-width: 768px) {
     .resa-about {
         margin-top: 0 !important;
-        padding-top: 48px !important;
+        padding-top: 24px !important;
     }
 
     .resa-about .col-lg-6.p-0 {
-        padding-top: 32px !important;
+        padding-top: 0 !important;
     }
 
     .resa-about-img {
         display: block;
         width: 100%;
-        margin-top: 0;
+        height: auto !important;
+        min-height: 0 !important;
+        margin-top: 72px !important;
     }
 }
