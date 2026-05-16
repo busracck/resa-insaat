@@ -1980,7 +1980,6 @@ body::before {
 
 }
 
-
 @media (max-width:768px){
 
     .resa-project-images{
@@ -2007,4 +2006,22 @@ body::before {
     transform:scale(0.98);
 }
 
+}
+
+/* Mobilde hakkimizda gorselini basliktan once daha asagida goster */
+@media (max-width: 768px) {
+    .resa-about {
+        margin-top: 0 !important;
+        padding-top: 48px !important;
+    }
+
+    .resa-about .col-lg-6.p-0 {
+        padding-top: 32px !important;
+    }
+
+    .resa-about-img {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+    }
 }
