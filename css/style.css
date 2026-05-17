@@ -935,14 +935,16 @@
   #carouselId .carousel-item {
     height: auto !important;
     min-height: 0 !important;
-    aspect-ratio: 1672 / 941 !important;
+    aspect-ratio: auto !important;
   }
 
   #carouselId .carousel-item img.carousel-img-fit {
     width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: initial !important;
     object-position: center center !important;
+    display: block !important;
   }
 }
 
@@ -950,7 +952,7 @@
   #carouselId .carousel-item {
     height: auto !important;
     min-height: 0 !important;
-    aspect-ratio: 1672 / 941 !important;
+    aspect-ratio: auto !important;
   }
 
   #carouselId .carousel-inner,
@@ -961,9 +963,11 @@
 
   #carouselId .carousel-item img.carousel-img-fit {
     width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: initial !important;
     object-position: center center !important;
+    display: block !important;
   }
 
   #carouselId .carousel-item img.carousel-img-2 {
