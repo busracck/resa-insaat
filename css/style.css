@@ -894,35 +894,37 @@
   }
 }
 
-/* Slider gorselleri banner oraninda bosluksuz dursun */
+/* Slider gorselleri her ekranda tam kadraj gorunsun */
 #carouselId .carousel-inner,
 #carouselId .carousel-item {
   background: #fff !important;
 }
 
 #carouselId .carousel-item {
-  height: calc(100vh - 96px) !important;
-  min-height: 520px;
-  aspect-ratio: auto;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
 }
 
 #carouselId .carousel-item img.carousel-img-fit {
   width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
+  height: auto !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
   object-position: center center !important;
+  display: block !important;
 }
 
 #carouselId .carousel-item img.carousel-img-1 {
-  object-position: center 68% !important;
+  object-position: center center !important;
 }
 
 #carouselId .carousel-item img.carousel-img-2 {
-  object-position: center 62% !important;
+  object-position: center center !important;
 }
 
 #carouselId .carousel-item img.carousel-img-3 {
-  object-position: center 70% !important;
+  object-position: center center !important;
 }
 
 #carouselId .carousel-item::after {
@@ -931,20 +933,20 @@
 
 @media (max-width: 768px) {
   #carouselId .carousel-item {
-    height: 72vh !important;
-    min-height: 430px;
+    height: auto !important;
+    min-height: 0 !important;
   }
 
   #carouselId .carousel-item img.carousel-img-1 {
-    object-position: 42% 68% !important;
+    object-position: center center !important;
   }
 
   #carouselId .carousel-item img.carousel-img-2 {
-    object-position: 45% 64% !important;
+    object-position: center center !important;
   }
 
   #carouselId .carousel-item img.carousel-img-3 {
-    object-position: 42% 72% !important;
+    object-position: center center !important;
   }
 }
 
