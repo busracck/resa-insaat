@@ -948,15 +948,15 @@
   }
 
   #carouselId .carousel-item img.carousel-img-1 {
-    object-position: 42% center !important;
+    object-position: left center !important;
   }
 
   #carouselId .carousel-item img.carousel-img-2 {
-    object-position: 50% center !important;
+    object-position: left center !important;
   }
 
   #carouselId .carousel-item img.carousel-img-3 {
-    object-position: 43% center !important;
+    object-position: left center !important;
   }
 }
 
@@ -982,12 +982,16 @@
     display: block !important;
   }
 
+  #carouselId .carousel-item img.carousel-img-1 {
+    object-position: left center !important;
+  }
+
   #carouselId .carousel-item img.carousel-img-2 {
-    object-position: 50% center !important;
+    object-position: left center !important;
   }
 
   #carouselId .carousel-item img.carousel-img-3 {
-    object-position: 43% center !important;
+    object-position: left center !important;
   }
 }
 
