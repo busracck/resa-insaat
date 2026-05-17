@@ -890,7 +890,35 @@
 @media (max-width: 576px) {
   .carousel .carousel-inner .carousel-item,
   .carousel .carousel-inner .carousel-item img.carousel-img-fit {
-    height: 620px;
+    height: auto;
+  }
+}
+
+/* Slider gorselleri banner oraninda bosluksuz dursun */
+#carouselId .carousel-inner,
+#carouselId .carousel-item {
+  background: #fff !important;
+}
+
+#carouselId .carousel-item {
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+}
+
+#carouselId .carousel-item img.carousel-img-fit {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+#carouselId .carousel-item::after {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  #carouselId .carousel-item {
+    aspect-ratio: 16 / 9;
   }
 }
 
