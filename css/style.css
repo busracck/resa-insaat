@@ -933,24 +933,36 @@
 
 @media (max-width: 1200px) {
   #carouselId .carousel-item {
-    height: auto !important;
+    height: clamp(360px, 58vw, 620px) !important;
     min-height: 0 !important;
     aspect-ratio: auto !important;
   }
 
   #carouselId .carousel-item img.carousel-img-fit {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     min-height: 0 !important;
-    object-fit: initial !important;
+    object-fit: cover !important;
     object-position: center center !important;
     display: block !important;
+  }
+
+  #carouselId .carousel-item img.carousel-img-1 {
+    object-position: 42% center !important;
+  }
+
+  #carouselId .carousel-item img.carousel-img-2 {
+    object-position: 50% center !important;
+  }
+
+  #carouselId .carousel-item img.carousel-img-3 {
+    object-position: 43% center !important;
   }
 }
 
 @media (max-width: 768px) {
   #carouselId .carousel-item {
-    height: auto !important;
+    height: clamp(300px, 78vw, 460px) !important;
     min-height: 0 !important;
     aspect-ratio: auto !important;
   }
@@ -963,19 +975,19 @@
 
   #carouselId .carousel-item img.carousel-img-fit {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     min-height: 0 !important;
-    object-fit: initial !important;
+    object-fit: cover !important;
     object-position: center center !important;
     display: block !important;
   }
 
   #carouselId .carousel-item img.carousel-img-2 {
-    object-position: center center !important;
+    object-position: 50% center !important;
   }
 
   #carouselId .carousel-item img.carousel-img-3 {
-    object-position: center center !important;
+    object-position: 43% center !important;
   }
 }
 
