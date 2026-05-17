@@ -931,13 +931,38 @@
   display: none !important;
 }
 
+@media (max-width: 1200px) {
+  #carouselId .carousel-item {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 1672 / 941 !important;
+  }
+
+  #carouselId .carousel-item img.carousel-img-fit {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
+
 @media (max-width: 768px) {
   #carouselId .carousel-item {
     height: auto !important;
     min-height: 0 !important;
+    aspect-ratio: 1672 / 941 !important;
   }
 
+  #carouselId .carousel-inner,
+  #carouselId .carousel-item,
   #carouselId .carousel-item img.carousel-img-1 {
+    width: 100% !important;
+  }
+
+  #carouselId .carousel-item img.carousel-img-fit {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
     object-position: center center !important;
   }
 
