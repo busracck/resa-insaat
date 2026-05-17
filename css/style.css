@@ -870,11 +870,14 @@
 }
 
 .carousel .carousel-inner .carousel-item img.carousel-img-main {
+  object-fit: contain;
   object-position: center center;
+  background: #050505;
 }
 
 @media (max-width: 991px) {
   .carousel .carousel-inner .carousel-item img.carousel-img-main {
+    object-fit: contain;
     object-position: center center;
   }
 }
